@@ -1,0 +1,24 @@
+:root {
+  --font-size: 16px;
+  --line-height: 1.625;
+  --font-family: manrope, sans-serif;
+
+  --container: 1200px;
+  --gutter: 1.25rem;
+
+  --accent: #6CCC61;
+  --secondary: #3A3845;
+  --radius: 20px;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
