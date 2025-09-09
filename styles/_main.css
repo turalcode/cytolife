@@ -1,6 +1,5 @@
 .button {
     padding: 1em 10em;
-    display: inline-block;
     text-decoration: initial;
     font-size: 0.875rem;
     color: #fff;
@@ -8,15 +7,42 @@
     letter-spacing: 2px;
     background-color: var(--secondary);
     border-radius: calc(3em);
-    border: initial;
-    cursor: pointer;
+    transition: background-color var(--delay) var(--function);
 }
-
+.button:hover {
+    background-color: var(--accent);
+}
 .button::after {
     content: "";
     margin-left: 0.5em;
     width: 0.75rem;
     height: 0.75rem;
-    display: inline-block;
     background: no-repeat center url("../public/images/arrow.png");
+    transition: width var(--delay) var(--function);
+}
+.button:hover::after {
+    width: 0;
+}
+
+/* HEADER */
+
+.header__row {
+    padding: 1em 0;
+}
+.header__logo img {
+    max-width: 185px;
+}
+
+/* NAV */
+
+.nav {
+    padding: 1.25em 0;
+    background-color: var(--secondary);
+    border-radius: 3em;
+}
+.nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.875rem;
+    color: var(--light-grey);
 }
