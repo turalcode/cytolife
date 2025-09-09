@@ -1,0 +1,22 @@
+.button {
+    padding: 1em 10em;
+    display: inline-block;
+    text-decoration: initial;
+    font-size: 0.875rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: var(--secondary);
+    border-radius: calc(3em);
+    border: initial;
+    cursor: pointer;
+}
+
+.button::after {
+    content: "";
+    margin-left: 0.5em;
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    background: no-repeat center url("../public/images/arrow.png");
+}
