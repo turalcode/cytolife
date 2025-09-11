@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
 body {
     margin: 0;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 h1,
@@ -18,6 +25,8 @@ h5,
 h6 {
     margin-bottom: 0.5rem;
     margin-top: 0;
+    font-weight: 500;
+    line-height: 1.2;
 }
 h1 {
     font-size: 3rem;
@@ -27,6 +36,9 @@ h2 {
 }
 h3 {
     font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.375rem;
 }
 
 ul {
@@ -107,4 +119,7 @@ a {
 }
 a:hover {
     color: var(--accent);
+}
+address {
+    font-style: initial;
 }
