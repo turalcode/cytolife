@@ -111,8 +111,11 @@ textarea {
     color: #666;
 }
 
+span,
 a {
     display: inline-block;
+}
+a {
     color: inherit;
     text-decoration: initial;
     transition: color var(--delay) var(--function);
