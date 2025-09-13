@@ -1,551 +1,1241 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cytolife</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cytolife</title>
+        <link rel="stylesheet" href="styles/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+        />
+    </head>
 
-  <body>
-    <header class="header">
-      <div class="header__row">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <a href="/" class="logo">
-                <img src="./public/images/logo.svg" alt="#" />
-              </a>
-            </div>
-            <div class="col-6">
-              <div class="row pb-1 h-100">
-                <div class="col-4">
-                  <div class="header__btn">
-                    <a href="tel:">Обратный звонок</a>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="header__contacts">
-                    <a href="#">+7 (499) 130-99-69</a>
-                    <div>с 10:00 до 18:30 (Пн-Пт)</div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="header__icons">
-                    <a href="#"><img src="./public/images/search.svg" alt="Поиск" /></a>
-                    <a href="#"><img src="./public/images/avatar.svg" alt="Аватар" /></a>
-                    <a href="#"><img src="./public/images/heart.svg" alt="Сердце" /></a>
-                    <a href="#"><img src="./public/images/cart.svg" alt="Корзина" /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <nav class="nav">
-        <div class="container">
-          <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Препараты</a></li>
-            <li><a href="#">Пилинги</a></li>
-            <li><a href="#">Профессиональная линия</a></li>
-            <li><a href="#">Мероприятия</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Статьи</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <section class="first-screen section">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <h1 class="first-screen__title">Профессиональные препараты для эстетической&nbspмедицины</h1>
-              <div class="first-screen__subtitle">
-                Разрабатываем и производим в России.<br />
-                Для специалистов, которые ценят<br />
-                результат и безопасность.
-              </div>
-
-              <a href="#" class="button first-screen--button">В каталог</a>
-            </div>
-            <div class="col-6">
-              <div class="first-screen__img">
-                <img src="./public/images/first-screen.png" alt="#" />
-              </div>
-            </div>
-          </div>
-
-          <div class="first-screen__partners">
-            <h3 class="first-screen__partners-title">Сотрудничаем с ведущими научными центрами</h3>
-
-            <ul class="first-screen__partners-list">
-              <li>
-                <img src="./public/images/partner-1.svg" alt="#" />
-              </li>
-              <li>
-                <img src="./public/images/partner-2.svg" alt="#" />
-              </li>
-              <li>
-                <img src="./public/images/partner-3.svg" alt="#" />
-              </li>
-              <li>
-                <img src="./public/images/partner-4.svg" alt="#" />
-              </li>
-              <li>
-                <img src="./public/images/partner-5.svg" alt="#" />
-              </li>
-              <li>
-                <img src="./public/images/partner-6.svg" alt="#" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <!-- /first-screen -->
-
-      <section class="products section">
-        <div class="container">
-          <h2 class="products__title section-title section-title--center">
-            <span class="mini-logo">Открытие</span>Новинки
-          </h2>
-
-          <div class="swiper swiper-products">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces">
-                        <img class="products__item-lock" src="./public/images/lock.svg" alt="#" />
-                        <div>Доступно для мед персонала</div>
-                      </div>
-
-                      <div class="products__item-icons">
-                        <a href="#" class="products__item-like">
-                          <img src="./public/images/heart.svg" alt="#" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-1.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#"><b>Ambre Life</b></a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">Цена доступна при авторизации</div>
-
-                      <div class="products__item-footer">
-                        <a href="#" class="button h-100">Авторизация</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces"></div>
-
-                      <a href="#" class="products__item-like">
-                        <img src="./public/images/heart.svg" alt="#" />
-                      </a>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-2.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#">
-                        <b>Эмульсия восстанавливающая<br />Repare SPF 30++</b>
-                      </a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">1000 руб.</div>
-
-                      <div class="products__item-footer">
-                        <div class="products__item-counter">
-                          <a href="#" class="products__item-minus">
-                            <img src="./public/images/minus.svg" alt="#" />
-                          </a>
-                          <div class="products__item-quantity">12</div>
-                          <a href="#" class="products__item-plus">
-                            <img src="./public/images/plus.svg" alt="#" />
-                          </a>
+    <body>
+        <header class="header">
+            <div class="header__row">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="/" class="logo">
+                                <img src="./public/images/logo.svg" alt="#" />
+                            </a>
                         </div>
-                        <a href="#" class="button h-100">В корзину</a>
-                      </div>
+                        <div class="col-6">
+                            <div class="row pb-1 h-100">
+                                <div class="col-4">
+                                    <div class="header__btn">
+                                        <a href="tel:">Обратный звонок</a>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="header__contacts">
+                                        <a href="#">+7 (499) 130-99-69</a>
+                                        <div>с 10:00 до 18:30 (Пн-Пт)</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="header__icons">
+                                        <a href="#"
+                                            ><img
+                                                src="./public/images/search.svg"
+                                                alt="Поиск"
+                                        /></a>
+                                        <a href="#"
+                                            ><img
+                                                src="./public/images/avatar.svg"
+                                                alt="Аватар"
+                                        /></a>
+                                        <a href="#"
+                                            ><img
+                                                src="./public/images/heart.svg"
+                                                alt="Сердце"
+                                        /></a>
+                                        <a href="#"
+                                            ><img
+                                                src="./public/images/cart.svg"
+                                                alt="Корзина"
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces"></div>
-
-                      <div class="products__item-icons">
-                        <div class="products__item-icon-text">
-                          <img src="./public/images/new.svg" alt="#" /><span>Новинка</span>
-                        </div>
-                        <a href="#" class="products__item-like">
-                          <img src="./public/images/heart.svg" alt="#" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-3.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#">
-                        <b>Крем Ultra Hydration 30</b>
-                      </a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">1000 руб.</div>
-
-                      <div class="products__item-footer">
-                        <div class="products__item-counter">
-                          <a href="#" class="products__item-minus">
-                            <img src="./public/images/minus.svg" alt="#" />
-                          </a>
-                          <div class="products__item-quantity">1</div>
-                          <a href="#" class="products__item-plus">
-                            <img src="./public/images/plus.svg" alt="#" />
-                          </a>
-                        </div>
-                        <a href="#" class="button h-100">В корзину</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces"></div>
-
-                      <div class="products__item-icons">
-                        <div class="products__item-icon-text">
-                          <img src="./public/images/new.svg" alt="#" /><span>Новинка</span>
-                        </div>
-                        <a href="#" class="products__item-like">
-                          <img src="./public/images/heart.svg" alt="#" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-3.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#">
-                        <b>Крем Ultra Hydration 30</b>
-                      </a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">1000 руб.</div>
-
-                      <div class="products__item-footer">
-                        <div class="products__item-counter">
-                          <a href="#" class="products__item-minus">
-                            <img src="./public/images/minus.svg" alt="#" />
-                          </a>
-                          <div class="products__item-quantity">1</div>
-                          <a href="#" class="products__item-plus">
-                            <img src="./public/images/plus.svg" alt="#" />
-                          </a>
-                        </div>
-                        <a href="#" class="button h-100">В корзину</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /products -->
-
-      <section class="products section products--popular">
-        <div class="container">
-          <h2 class="products__title section-title section-title--center">
-            <span class="mini-logo">Лидеры</span>Популярные
-          </h2>
-
-          <div class="swiper swiper-products">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces">
-                        <img class="products__item-lock" src="./public/images/lock.svg" alt="#" />
-                        <div>Доступно для мед персонала</div>
-                      </div>
-
-                      <div class="products__item-icons">
-                        <a href="#" class="products__item-like">
-                          <img src="./public/images/heart.svg" alt="#" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-1.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#"><b>Ambre Life</b></a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">Цена доступна при авторизации</div>
-
-                      <div class="products__item-footer">
-                        <a href="#" class="button h-100">Авторизация</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces"></div>
-
-                      <a href="#" class="products__item-like">
-                        <img src="./public/images/heart.svg" alt="#" />
-                      </a>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-2.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#">
-                        <b>Эмульсия восстанавливающая<br />Repare SPF 30++</b>
-                      </a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">1000 руб.</div>
-
-                      <div class="products__item-footer">
-                        <div class="products__item-counter">
-                          <a href="#" class="products__item-minus">
-                            <img src="./public/images/minus.svg" alt="#" />
-                          </a>
-                          <div class="products__item-quantity">12</div>
-                          <a href="#" class="products__item-plus">
-                            <img src="./public/images/plus.svg" alt="#" />
-                          </a>
-                        </div>
-                        <a href="#" class="button h-100">В корзину</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces"></div>
-
-                      <div class="products__item-icons">
-                        <div class="products__item-icon-text">
-                          <img src="./public/images/new.svg" alt="#" /><span>Новинка</span>
-                        </div>
-                        <a href="#" class="products__item-like">
-                          <img src="./public/images/heart.svg" alt="#" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-3.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#">
-                        <b>Крем Ultra Hydration 30</b>
-                      </a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">1000 руб.</div>
-
-                      <div class="products__item-footer">
-                        <div class="products__item-counter">
-                          <a href="#" class="products__item-minus">
-                            <img src="./public/images/minus.svg" alt="#" />
-                          </a>
-                          <div class="products__item-quantity">1</div>
-                          <a href="#" class="products__item-plus">
-                            <img src="./public/images/plus.svg" alt="#" />
-                          </a>
-                        </div>
-                        <a href="#" class="button h-100">В корзину</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="products__item">
-                  <div class="products__item-header">
-                    <div class="products__item-info">
-                      <div class="products__item-acces"></div>
-
-                      <div class="products__item-icons">
-                        <div class="products__item-icon-text">
-                          <img src="./public/images/new.svg" alt="#" /><span>Новинка</span>
-                        </div>
-                        <a href="#" class="products__item-like">
-                          <img src="./public/images/heart.svg" alt="#" />
-                        </a>
-                      </div>
-                    </div>
-
-                    <a class="products__item-picture" href="#">
-                      <img src="/public/images/product-3.png" alt="#" />
-                    </a>
-                  </div>
-
-                  <div class="products__item-footer-wrapper">
-                    <div class="products__item-title">
-                      <a href="#">
-                        <b>Крем Ultra Hydration 30</b>
-                      </a>
-                    </div>
-
-                    <div>
-                      <div class="products__item-price">1000 руб.</div>
-
-                      <div class="products__item-footer">
-                        <div class="products__item-counter">
-                          <a href="#" class="products__item-minus">
-                            <img src="./public/images/minus.svg" alt="#" />
-                          </a>
-                          <div class="products__item-quantity">1</div>
-                          <a href="#" class="products__item-plus">
-                            <img src="./public/images/plus.svg" alt="#" />
-                          </a>
-                        </div>
-                        <a href="#" class="button h-100">В корзину</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /products -->
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-4">
-            <a href="/" class="logo">
-              <img src="./public/images/logo-light.svg" alt="#" />
-            </a>
-
-            <div>Разработка и производство препаратов для эстетической медицины</div>
-
-            <a class="button-light button-light--footer-btn" href="#"
-              >Напишите нам
-              <img class="button-light-img" src="./public/images/arrow-circle.svg" alt="#" />
-              <img class="button-light-img-hover" src="./public/images/arrow-circle-green.svg" alt="#"
-            /></a>
-          </div>
-
-          <div class="col-4">
-            <h4 class="footer__title">Для связи</h4>
-            <div>
-              <a class="footer__tel" href="tel:74991309969">+7 (499) 130-99-69</a>
-            </div>
-            <div>
-              <a class="footer__mail" href="mailto:info@cytolife.ru">info@cytolife.ru</a>
-            </div>
-            <div class="footer__soc">
-              <a href="#"> <img src="./public/images/vk-circle.svg" alt="Вконтакте" /></a
-              ><a href="#"> <img src="./public/images/tg-circle.svg" alt="Телеграм" /></a>
             </div>
 
-            <address>123242, г. Москва, ул. Дружинниковская, д.11/2, помещ.1/1</address>
-          </div>
-
-          <div class="col-4">
-            <h4 class="footer__title">Информация</h4>
-
-            <nav class="footer__nav">
-              <ul>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li>
-                  <a href="#">Политика конфиденциальности</a>
-                </li>
-                <li>
-                  <a href="#">Согласие на обработку персональных данных</a>
-                </li>
-                <li><a href="#">Договор-оферта</a></li>
-              </ul>
+            <nav class="nav">
+                <div class="container">
+                    <ul>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Препараты</a></li>
+                        <li><a href="#">Пилинги</a></li>
+                        <li><a href="#">Профессиональная линия</a></li>
+                        <li><a href="#">Мероприятия</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Статьи</a></li>
+                    </ul>
+                </div>
             </nav>
-          </div>
-        </div>
+        </header>
 
-        <hr />
+        <main>
+            <section class="first-screen section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="first-screen__title">
+                                Профессиональные препараты для
+                                эстетической&nbspмедицины
+                            </h1>
+                            <div class="first-screen__subtitle">
+                                Разрабатываем и производим в России.<br />
+                                Для специалистов, которые ценят<br />
+                                результат и безопасность.
+                            </div>
 
-        <div class="footer__copyright">Copyright  © 2019 - 2025 | ООО «Медтендергруп»</div>
-      </div>
+                            <a href="#" class="button first-screen--button"
+                                >В каталог</a
+                            >
+                        </div>
+                        <div class="col-6">
+                            <div class="first-screen__img">
+                                <img
+                                    src="./public/images/first-screen.png"
+                                    alt="#"
+                                />
+                            </div>
+                        </div>
+                    </div>
 
-      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-      <script src="./scripts/index.js"></script>
-    </footer>
-  </body>
+                    <div class="first-screen__partners">
+                        <h3 class="first-screen__partners-title">
+                            Сотрудничаем с ведущими научными центрами
+                        </h3>
+
+                        <ul class="first-screen__partners-list">
+                            <li>
+                                <img
+                                    src="./public/images/partner-1.svg"
+                                    alt="#"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./public/images/partner-2.svg"
+                                    alt="#"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./public/images/partner-3.svg"
+                                    alt="#"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./public/images/partner-4.svg"
+                                    alt="#"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./public/images/partner-5.svg"
+                                    alt="#"
+                                />
+                            </li>
+                            <li>
+                                <img
+                                    src="./public/images/partner-6.svg"
+                                    alt="#"
+                                />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- /first-screen -->
+
+            <section class="products section">
+                <div class="container">
+                    <h2
+                        class="products__title section-title section-title--center"
+                    >
+                        <span class="mini-logo">Открытие</span>Новинки
+                    </h2>
+
+                    <div class="swiper swiper-products">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div class="products__item-acces">
+                                                <img
+                                                    class="products__item-lock"
+                                                    src="./public/images/lock.svg"
+                                                    alt="#"
+                                                />
+                                                <div>
+                                                    Доступно для мед персонала
+                                                </div>
+                                            </div>
+
+                                            <div class="products__item-icons">
+                                                <a
+                                                    href="#"
+                                                    class="products__item-like"
+                                                >
+                                                    <img
+                                                        src="./public/images/heart.svg"
+                                                        alt="#"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-1.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#"><b>Ambre Life</b></a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                Цена доступна при авторизации
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <a href="#" class="button h-100"
+                                                    >Авторизация</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div
+                                                class="products__item-acces"
+                                            ></div>
+
+                                            <a
+                                                href="#"
+                                                class="products__item-like"
+                                            >
+                                                <img
+                                                    src="./public/images/heart.svg"
+                                                    alt="#"
+                                                />
+                                            </a>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-2.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#">
+                                                <b
+                                                    >Эмульсия
+                                                    восстанавливающая<br />Repare
+                                                    SPF 30++</b
+                                                >
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                1000 руб.
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <div
+                                                    class="products__item-counter"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-minus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/minus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                    <div
+                                                        class="products__item-quantity"
+                                                    >
+                                                        12
+                                                    </div>
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-plus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/plus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="button h-100"
+                                                    >В корзину</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div
+                                                class="products__item-acces"
+                                            ></div>
+
+                                            <div class="products__item-icons">
+                                                <div
+                                                    class="products__item-icon-text"
+                                                >
+                                                    <img
+                                                        src="./public/images/new.svg"
+                                                        alt="#"
+                                                    /><span>Новинка</span>
+                                                </div>
+                                                <a
+                                                    href="#"
+                                                    class="products__item-like"
+                                                >
+                                                    <img
+                                                        src="./public/images/heart.svg"
+                                                        alt="#"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-3.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#">
+                                                <b>Крем Ultra Hydration 30</b>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                1000 руб.
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <div
+                                                    class="products__item-counter"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-minus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/minus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                    <div
+                                                        class="products__item-quantity"
+                                                    >
+                                                        1
+                                                    </div>
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-plus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/plus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="button h-100"
+                                                    >В корзину</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div
+                                                class="products__item-acces"
+                                            ></div>
+
+                                            <div class="products__item-icons">
+                                                <div
+                                                    class="products__item-icon-text"
+                                                >
+                                                    <img
+                                                        src="./public/images/new.svg"
+                                                        alt="#"
+                                                    /><span>Новинка</span>
+                                                </div>
+                                                <a
+                                                    href="#"
+                                                    class="products__item-like"
+                                                >
+                                                    <img
+                                                        src="./public/images/heart.svg"
+                                                        alt="#"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-3.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#">
+                                                <b>Крем Ultra Hydration 30</b>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                1000 руб.
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <div
+                                                    class="products__item-counter"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-minus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/minus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                    <div
+                                                        class="products__item-quantity"
+                                                    >
+                                                        1
+                                                    </div>
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-plus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/plus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="button h-100"
+                                                    >В корзину</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /products -->
+
+            <section class="products section products--popular">
+                <div class="container">
+                    <h2
+                        class="products__title section-title section-title--center"
+                    >
+                        <span class="mini-logo">Лидеры</span>Популярные
+                    </h2>
+
+                    <div class="swiper swiper-products">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div class="products__item-acces">
+                                                <img
+                                                    class="products__item-lock"
+                                                    src="./public/images/lock.svg"
+                                                    alt="#"
+                                                />
+                                                <div>
+                                                    Доступно для мед персонала
+                                                </div>
+                                            </div>
+
+                                            <div class="products__item-icons">
+                                                <a
+                                                    href="#"
+                                                    class="products__item-like"
+                                                >
+                                                    <img
+                                                        src="./public/images/heart.svg"
+                                                        alt="#"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-1.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#"><b>Ambre Life</b></a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                Цена доступна при авторизации
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <a href="#" class="button h-100"
+                                                    >Авторизация</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div
+                                                class="products__item-acces"
+                                            ></div>
+
+                                            <a
+                                                href="#"
+                                                class="products__item-like"
+                                            >
+                                                <img
+                                                    src="./public/images/heart.svg"
+                                                    alt="#"
+                                                />
+                                            </a>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-2.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#">
+                                                <b
+                                                    >Эмульсия
+                                                    восстанавливающая<br />Repare
+                                                    SPF 30++</b
+                                                >
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                1000 руб.
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <div
+                                                    class="products__item-counter"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-minus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/minus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                    <div
+                                                        class="products__item-quantity"
+                                                    >
+                                                        12
+                                                    </div>
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-plus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/plus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="button h-100"
+                                                    >В корзину</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div
+                                                class="products__item-acces"
+                                            ></div>
+
+                                            <div class="products__item-icons">
+                                                <div
+                                                    class="products__item-icon-text"
+                                                >
+                                                    <img
+                                                        src="./public/images/new.svg"
+                                                        alt="#"
+                                                    /><span>Новинка</span>
+                                                </div>
+                                                <a
+                                                    href="#"
+                                                    class="products__item-like"
+                                                >
+                                                    <img
+                                                        src="./public/images/heart.svg"
+                                                        alt="#"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-3.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#">
+                                                <b>Крем Ultra Hydration 30</b>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                1000 руб.
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <div
+                                                    class="products__item-counter"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-minus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/minus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                    <div
+                                                        class="products__item-quantity"
+                                                    >
+                                                        1
+                                                    </div>
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-plus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/plus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="button h-100"
+                                                    >В корзину</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="products__item">
+                                    <div class="products__item-header">
+                                        <div class="products__item-info">
+                                            <div
+                                                class="products__item-acces"
+                                            ></div>
+
+                                            <div class="products__item-icons">
+                                                <div
+                                                    class="products__item-icon-text"
+                                                >
+                                                    <img
+                                                        src="./public/images/new.svg"
+                                                        alt="#"
+                                                    /><span>Новинка</span>
+                                                </div>
+                                                <a
+                                                    href="#"
+                                                    class="products__item-like"
+                                                >
+                                                    <img
+                                                        src="./public/images/heart.svg"
+                                                        alt="#"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <a
+                                            class="products__item-picture"
+                                            href="#"
+                                        >
+                                            <img
+                                                src="/public/images/product-3.png"
+                                                alt="#"
+                                            />
+                                        </a>
+                                    </div>
+
+                                    <div class="products__item-footer-wrapper">
+                                        <div class="products__item-title">
+                                            <a href="#">
+                                                <b>Крем Ultra Hydration 30</b>
+                                            </a>
+                                        </div>
+
+                                        <div>
+                                            <div class="products__item-price">
+                                                1000 руб.
+                                            </div>
+
+                                            <div class="products__item-footer">
+                                                <div
+                                                    class="products__item-counter"
+                                                >
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-minus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/minus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                    <div
+                                                        class="products__item-quantity"
+                                                    >
+                                                        1
+                                                    </div>
+                                                    <a
+                                                        href="#"
+                                                        class="products__item-plus"
+                                                    >
+                                                        <img
+                                                            src="./public/images/plus.svg"
+                                                            alt="#"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="button h-100"
+                                                    >В корзину</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /products -->
+
+            <section class="laboratory section section--laboratory">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="row">
+                            <div class="col-4">
+                                <span class="mini-logo">Инновации</span>
+                            </div>
+                            <div class="col-8">
+                                <h2 class="section-header-title">
+                                    Laboratory Cytolife производит
+                                </h2>
+                                <div>
+                                    Laboratory Cytolife — российская компания,
+                                    специализирующаяся на разработке и
+                                    производстве препаратов для профессиональной
+                                    косметологии. В основе — собственные
+                                    исследования, клинические испытания и работа
+                                    с экспертами в области эстетической
+                                    медицины.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="laboratory__item">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="laboratory__item-img-block">
+                                    <div class="laboratory__item-number">
+                                        01
+                                    </div>
+
+                                    <div class="laboratory__item-picture">
+                                        <img
+                                            src="./public/images/laboratory-1.png"
+                                            alt="#"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="laboratory__item-text">
+                                    <h3 class="laboratory__item-title">
+                                        Препараты для инъекционной косметологии
+                                    </h3>
+                                    <div>
+                                        Средства для биоревитализации,
+                                        мезотерапии и коррекции возрастных
+                                        изменений. Высокая эффективность,
+                                        подтверждённая исследованиями.
+                                    </div>
+
+                                    <a
+                                        class="button-light button-light--laboratory-item"
+                                        href="#"
+                                        >Напишите нам
+                                        <img
+                                            class="button-light-img"
+                                            src="./public/images/arrow-circle-dark.svg"
+                                            alt="#" />
+                                        <img
+                                            class="button-light-img-hover"
+                                            src="./public/images/arrow-circle-bg-green.svg"
+                                            alt="#"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="laboratory__item">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="laboratory__item-img-block">
+                                    <div class="laboratory__item-number">
+                                        02
+                                    </div>
+
+                                    <div class="laboratory__item-picture">
+                                        <img
+                                            src="./public/images/laboratory-2.png"
+                                            alt="#"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="laboratory__item-text">
+                                    <h3 class="laboratory__item-title">
+                                        Химические пилинги
+                                    </h3>
+                                    <div>
+                                        Линейка пилингов с предсказуемым
+                                        результатом и контролируемым
+                                        воздействием.
+                                    </div>
+
+                                    <a
+                                        class="button-light button-light--laboratory-item"
+                                        href="#"
+                                        >Напишите нам
+                                        <img
+                                            class="button-light-img"
+                                            src="./public/images/arrow-circle-dark.svg"
+                                            alt="#" />
+                                        <img
+                                            class="button-light-img-hover"
+                                            src="./public/images/arrow-circle-bg-green.svg"
+                                            alt="#"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="laboratory__item">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="laboratory__item-img-block">
+                                    <div class="laboratory__item-number">
+                                        03
+                                    </div>
+
+                                    <div class="laboratory__item-picture">
+                                        <img
+                                            src="./public/images/laboratory-3.png"
+                                            alt="#"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <div class="laboratory__item-text">
+                                    <h3 class="laboratory__item-title">
+                                        Профессиональная уходовая линия
+                                    </h3>
+                                    <div>
+                                        Профессиональная уходовая линия.
+                                        Средства для постпроцедурного
+                                        восстановления и поддержания здоровья
+                                        кожи.
+                                    </div>
+
+                                    <a
+                                        class="button-light button-light--laboratory-item"
+                                        href="#"
+                                        >Напишите нам
+                                        <img
+                                            class="button-light-img"
+                                            src="./public/images/arrow-circle-dark.svg"
+                                            alt="#" />
+                                        <img
+                                            class="button-light-img-hover"
+                                            src="./public/images/arrow-circle-bg-green.svg"
+                                            alt="#"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /laboratory -->
+
+            <section class="education section section--education">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="row">
+                            <div class="col-4">
+                                <span class="mini-logo">Развитие</span>
+                            </div>
+                            <div class="col-8">
+                                <h2 class="section-header-title">
+                                    Обучение для специалистов
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="education__img-block">
+                                <img
+                                    src="./public/images/education.jpg"
+                                    alt="#"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div class="education__text-wrapper">
+                                <div>
+                                    Проводим мастер-классы, вебинары и обучающие
+                                    курсы для врачей-<br />косметологов.<br />
+                                    Помогаем освоить технику работы с
+                                    препаратами и получать максимальный<br />
+                                    результат для пациентов.
+                                </div>
+
+                                <div class="education__btn">
+                                    <a class="button" href="#"
+                                        >Перейти в личный кабинет</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /education -->
+
+            <section class="advantages section section--advantages">
+                <div class="container">
+                    <div class="section-header">
+                        <div class="row">
+                            <div class="col-4">
+                                <span class="mini-logo">Преимущества</span>
+                            </div>
+                            <div class="col-8">
+                                <h2 class="section-header-title">
+                                    Почему выбирают CYTOLIFE
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="advantages__gallery">
+                        <div class="advantages__gallery-col">
+                            <div class="advantages__item advantages__item--bg">
+                                <div class="advantages__item-title">
+                                    10+ лет
+                                </div>
+                                <div class="advantages__item-subtitle">
+                                    собственных разработок
+                                </div>
+                            </div>
+
+                            <div class="advantages__item">
+                                <div class="advantages__item-title">
+                                    100 000+
+                                </div>
+                                <div class="advantages__item-subtitle">
+                                    процедур проводим ежегодно
+                                </div>
+                            </div>
+
+                            <div class="advantages__item">
+                                <div class="advantages__item-title">80+</div>
+                                <div class="advantages__item-subtitle">
+                                    партнёров в России и СНГ
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="advantages__gallery-col">
+                            <div
+                                class="advantages__item advantages__item--reset"
+                            >
+                                <div>
+                                    Эффективность продуктов подтверждена
+                                    клиническими испытаниями. Собственное
+                                    производство в Москве обеспечивает полный
+                                    контроль качества на каждом этапе.
+                                </div>
+                                <a href="#" class="button">О компании</a>
+                            </div>
+
+                            <div
+                                class="advantages__item advantages__item--reset"
+                            ></div>
+
+                            <div
+                                class="advantages__item advantages__item--reset advantages__item--text-flex-end"
+                            >
+                                <div>
+                                    Мы сотрудничаем с дистрибьюторами в России и
+                                    странах СНГ. Предоставляем полную
+                                    информационную поддержку, обучающие
+                                    материалы и рекламные инструменты для
+                                    продвижения продукции.
+                                </div>
+                                <a href="#" class="button"
+                                    >Стать дистрибьютором</a
+                                >
+                            </div>
+                        </div>
+
+                        <div class="advantages__gallery-col">
+                            <div class="advantages__item">
+                                <div class="advantages__item-title">600+</div>
+                                <div class="advantages__item-subtitle">
+                                    Обучающих вебинаров и мастер-классов
+                                </div>
+                            </div>
+
+                            <div
+                                class="advantages__item advantages__item--reset advantages__item--height"
+                            >
+                                <div>
+                                    Мы регулярно проводим обучение специалистов,
+                                    чтобы они могли работать с продуктами на
+                                    профессиональном уровне. Программы включают
+                                    теоретическую базу и практические
+                                    мастер-классы под руководством экспертов.
+                                </div>
+                            </div>
+
+                            <div
+                                class="advantages__item advantages__item--reset advantages__item--height advantages__item--hidden"
+                            >
+                                <img
+                                    src="/public/images/advantages-item-img.jpg"
+                                    alt="#"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <a href="/" class="logo">
+                            <img src="./public/images/logo-light.svg" alt="#" />
+                        </a>
+
+                        <div>
+                            Разработка и производство препаратов для
+                            эстетической медицины
+                        </div>
+
+                        <a
+                            class="button-light button-light--footer-btn"
+                            href="#"
+                            >Напишите нам
+                            <img
+                                class="button-light-img"
+                                src="./public/images/arrow-circle-light.svg"
+                                alt="#" />
+                            <img
+                                class="button-light-img-hover"
+                                src="./public/images/arrow-circle-bg-green.svg"
+                                alt="#"
+                        /></a>
+                    </div>
+
+                    <div class="col-4">
+                        <h4 class="footer__title">Для связи</h4>
+                        <div>
+                            <a class="footer__tel" href="tel:74991309969"
+                                >+7 (499) 130-99-69</a
+                            >
+                        </div>
+                        <div>
+                            <a
+                                class="footer__mail"
+                                href="mailto:info@cytolife.ru"
+                                >info@cytolife.ru</a
+                            >
+                        </div>
+                        <div class="footer__soc">
+                            <a href="#">
+                                <img
+                                    src="./public/images/vk-circle.svg"
+                                    alt="Вконтакте" /></a
+                            ><a href="#">
+                                <img
+                                    src="./public/images/tg-circle.svg"
+                                    alt="Телеграм"
+                            /></a>
+                        </div>
+
+                        <address>
+                            123242, г. Москва, ул. Дружинниковская, д.11/2,
+                            помещ.1/1
+                        </address>
+                    </div>
+
+                    <div class="col-4">
+                        <h4 class="footer__title">Информация</h4>
+
+                        <nav class="footer__nav">
+                            <ul>
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        >Согласие на обработку персональных
+                                        данных</a
+                                    >
+                                </li>
+                                <li><a href="#">Договор-оферта</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="footer__copyright">
+                    Copyright  © 2019 - 2025 | ООО «Медтендергруп»
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+            <script src="./scripts/index.js"></script>
+        </footer>
+    </body>
 </html>
