@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cytolife</title>
     <link rel="stylesheet" href="styles/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -37,9 +34,7 @@
                 </div>
                 <div class="col-4">
                   <div class="header__icons">
-                    <a href="#"
-                      ><img src="./public/images/search.svg" alt="Поиск"
-                    /></a>
+                    <a href="#"><img src="./public/images/search.svg" alt="Поиск" /></a>
 
                     <div class="user-menu">
                       <a href="#">
@@ -85,12 +80,8 @@
                       </nav>
                     </div>
 
-                    <a href="#"
-                      ><img src="./public/images/heart.svg" alt="Сердце"
-                    /></a>
-                    <a href="#"
-                      ><img src="./public/images/cart.svg" alt="Корзина"
-                    /></a>
+                    <a href="#"><img src="./public/images/heart.svg" alt="Сердце" /></a>
+                    <a href="#"><img src="./public/images/cart.svg" alt="Корзина" /></a>
                   </div>
                 </div>
               </div>
@@ -103,7 +94,7 @@
         <div class="container pos-r">
           <div class="header-mob__row">
             <div class="header-mob__item">
-              <div class="header-mob__burger">
+              <div id="burger-btn" class="header-mob__burger">
                 <img src="./public/images/burger.svg" alt="#" />
               </div>
             </div>
@@ -158,16 +149,15 @@
                   </nav>
                 </div>
 
-                <a href="#"
-                  ><img src="./public/images/cart.svg" alt="Корзина"
-                /></a>
+                <a href="#"><img src="./public/images/cart.svg" alt="Корзина" /></a>
               </div>
             </div>
           </div>
 
-          <nav class="nav-mob">
+          <nav id="nav-mob" class="nav-mob">
             <ul>
-              <li>
+              <li class="nav-mob__accent">
+                <img src="./public/images/arrow-right.svg" alt="#" />
                 <a href="#">Каталог</a>
               </li>
               <li>
@@ -182,14 +172,13 @@
               <li>
                 <a href="#">О компании</a>
               </li>
-              <li>
+              <li class="nav-mob__icon">
+                <img src="./public/images/heart-green.svg" alt="#" />
                 <a href="#">Избранное</a>
               </li>
             </ul>
 
-            <a class="nav-mob__tel" href="tel:+74991309969"
-              >+7 (499) 130-99-69</a
-            >
+            <a class="nav-mob__tel" href="tel:+74991309969">+7 (499) 130-99-69</a>
 
             <div class="header__btn">
               <a href="tel:">Обратный звонок</a>
@@ -199,12 +188,7 @@
             </div>
 
             <div class="header-mob__search">
-              <input
-                class="input-search"
-                type="text"
-                name="search"
-                placeholder="Введите запрос"
-              />
+              <input class="input-search" type="text" name="search" placeholder="Введите запрос" />
             </div>
           </nav>
         </div>
@@ -226,13 +210,11 @@
     </header>
 
     <main class="main">
-      <!-- <section class="first-screen section">
+      <section class="first-screen section">
         <div class="container">
           <div class="row">
-            <div class="col-6">
-              <h1 class="first-screen__title">
-                Профессиональные препараты для эстетической&nbspмедицины
-              </h1>
+            <div class="col-lg-6">
+              <h1 class="first-screen__title">Профессиональные препараты для эстетической&nbsp;<br />медицины</h1>
               <div class="first-screen__subtitle">
                 Разрабатываем и производим в России.<br />
                 Для специалистов, которые ценят<br />
@@ -241,7 +223,7 @@
 
               <a href="#" class="button first-screen--button">В каталог</a>
             </div>
-            <div class="col-6">
+            <div class="col-lg-6">
               <div class="first-screen__img">
                 <img src="./public/images/first-screen.png" alt="#" />
               </div>
@@ -249,36 +231,37 @@
           </div>
 
           <div class="first-screen__partners">
-            <h3 class="first-screen__partners-title">
-              Сотрудничаем с ведущими научными центрами
-            </h3>
+            <h3 class="first-screen__partners-title">Сотрудничаем с ведущими научными центрами</h3>
 
             <ul class="first-screen__partners-list">
               <li>
                 <img src="./public/images/partner-1.svg" alt="#" />
               </li>
               <li>
-                <img src="./public/images/partner-2.svg" alt="#" />
+                <img class="partners-img-desktop" src="./public/images/partner-2.svg" alt="#" />
+                <img class="partners-img-mob" src="./public/images/partner-2-mob.svg" alt="#" />
               </li>
               <li>
                 <img src="./public/images/partner-3.svg" alt="#" />
               </li>
               <li>
-                <img src="./public/images/partner-4.svg" alt="#" />
+                <img class="partners-img-desktop" src="./public/images/partner-4.svg" alt="#" />
+                <img class="partners-img-mob" src="./public/images/partner-4-mob.svg" alt="#" />
               </li>
               <li>
                 <img src="./public/images/partner-5.svg" alt="#" />
               </li>
               <li>
-                <img src="./public/images/partner-6.svg" alt="#" />
+                <img class="partners-img-desktop" src="./public/images/partner-6.svg" alt="#" />
+                <img class="partners-img-mob" src="./public/images/partner-6-mob.svg" alt="#" />
               </li>
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /first-screen -->
 
-      <!-- <section class="products section">
+      <section class="products section">
         <div class="container">
           <h2 class="products__title section-title section-title--center">
             <span class="mini-logo">Открытие</span>Новинки
@@ -474,10 +457,10 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /products -->
 
-      <!-- <section class="products section products--popular">
+      <section class="products section products--popular">
         <div class="container">
           <h2 class="products__title section-title section-title--center">
             <span class="mini-logo">Лидеры</span>Популярные
@@ -673,17 +656,17 @@
             </div>
           </div>
         </div>
-      </section> -->
-      <!-- /products -->
+      </section>
+      <!-- /products products--popular -->
 
-      <!-- <section class="laboratory section section--pt">
+      <section class="laboratory section section--pt">
         <div class="container">
           <div class="section-header">
             <div class="row">
-              <div class="col-4">
+              <div class="col-md-4">
                 <span class="mini-logo">Инновации</span>
               </div>
-              <div class="col-8">
+              <div class="col-md-8">
                 <h2 class="section-header-title">
                   Laboratory Cytolife производит
                 </h2>
@@ -808,7 +791,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- /laboratory -->
 
       <!-- <section class="education section section--pt">
@@ -1030,57 +1013,40 @@
       <!-- /company -->
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6">
             <a href="/" class="logo">
               <img src="./public/images/logo-light.svg" alt="#" />
             </a>
 
-            <div>
-              Разработка и производство препаратов для эстетической медицины
-            </div>
+            <div>Разработка и производство препаратов для эстетической медицины</div>
 
             <a class="button-light button-light--footer-btn" href="#"
               >Напишите нам
-              <img
-                class="button-light-img"
-                src="./public/images/arrow-circle-light.svg"
-                alt="#" />
-              <img
-                class="button-light-img-hover"
-                src="./public/images/arrow-circle-bg-green.svg"
-                alt="#"
+              <img class="button-light-img" src="./public/images/arrow-circle-light.svg" alt="#" />
+              <img class="button-light-img-hover" src="./public/images/arrow-circle-bg-green.svg" alt="#"
             /></a>
           </div>
 
-          <div class="col-4">
+          <div class="col-lg-4 col-md-6">
             <h4 class="footer__title">Для связи</h4>
             <div>
-              <a class="footer__tel" href="tel:74991309969"
-                >+7 (499) 130-99-69</a
-              >
+              <a class="footer__tel" href="tel:74991309969">+7 (499) 130-99-69</a>
             </div>
             <div>
-              <a class="footer__mail" href="mailto:info@cytolife.ru"
-                >info@cytolife.ru</a
-              >
+              <a class="footer__mail" href="mailto:info@cytolife.ru">info@cytolife.ru</a>
             </div>
             <div class="footer__soc">
-              <a href="#">
-                <img src="./public/images/vk-circle.svg" alt="Вконтакте" /></a
-              ><a href="#">
-                <img src="./public/images/tg-circle.svg" alt="Телеграм"
-              /></a>
+              <a href="#"> <img src="./public/images/vk-circle.svg" alt="Вконтакте" /></a
+              ><a href="#"> <img src="./public/images/tg-circle.svg" alt="Телеграм" /></a>
             </div>
 
-            <address>
-              123242, г. Москва, ул. Дружинниковская, д.11/2, помещ.1/1
-            </address>
+            <address>123242, г. Москва, ул. Дружинниковская, д.11/2, помещ.1/1</address>
           </div>
 
-          <div class="col-4">
+          <div class="col-lg-4">
             <h4 class="footer__title">Информация</h4>
 
             <nav class="footer__nav">
@@ -1100,13 +1066,11 @@
 
         <hr />
 
-        <div class="footer__copyright">
-          Copyright  © 2019 - 2025 | ООО «Медтендергруп»
-        </div>
+        <div class="footer__copyright">Copyright  © 2019 - 2025 | ООО «Медтендергруп»</div>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
       <script src="./scripts/index.js"></script>
-    </footer> -->
+    </footer>
   </body>
 </html>

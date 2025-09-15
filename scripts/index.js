@@ -1,11 +1,23 @@
 const swiperProducts = new Swiper(".swiper-products", {
-  slidesPerView: "3",
   spaceBetween: 20,
-  // loop: true,
+  loop: true,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 const swiperCertificate = new Swiper(".swiper-certificate", {
   slidesPerView: "5",
   spaceBetween: 20,
   // loop: true,
+});
+
+document.getElementById("burger-btn").addEventListener("click", function () {
+  document.getElementById("nav-mob").classList.toggle("show");
 });

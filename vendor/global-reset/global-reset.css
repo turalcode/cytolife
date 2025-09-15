@@ -89,6 +89,12 @@ textarea {
 
 input {
   outline: none;
+  color: inherit;
+  border: none;
+}
+.input::placeholder {
+  font-size: 0.875rem;
+  color: #8c8c8c;
 }
 
 [type="button"]:not(:disabled),
