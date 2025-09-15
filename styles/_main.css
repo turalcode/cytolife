@@ -367,7 +367,7 @@
   margin-bottom: 1em;
   font-size: 1.25rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
 }
 .first-screen__partners-list {
   display: flex;
@@ -471,6 +471,7 @@
   font-size: 1.125rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border: 1px solid var(--secondary);
   border-radius: 1.7em;
 }
@@ -492,6 +493,7 @@
   left: 0;
   font-size: 1.5rem;
 }
+.laboratory__item-picture-mob,
 .laboratory__item-picture {
   width: 9rem;
   height: 9rem;
@@ -501,6 +503,10 @@
   border: 1px solid var(--accent-light);
   border-radius: 50%;
 }
+.laboratory__item-picture-mob {
+  display: none;
+}
+.laboratory__item-picture-mob img,
 .laboratory__item-picture img {
   max-width: 5.5rem;
 }
@@ -532,6 +538,9 @@
 }
 .education__text-wrapper .button {
   max-width: 22rem;
+}
+.education__btn {
+  margin-top: 2em;
 }
 
 /* ADVANTAGES */
@@ -594,6 +603,15 @@
   height: 100%;
   object-fit: cover;
 }
+.advantages__gallery-mob {
+  display: none;
+}
+.advantages__item-decor {
+  display: none;
+  position: absolute;
+  top: -40%;
+  left: 50%;
+}
 
 /* CERTIFICATE */
 
@@ -627,6 +645,9 @@
   flex-direction: column;
   justify-content: center;
 }
-.company__bg img {
+.company__img img {
   width: 100%;
+}
+.company__img img:nth-child(2) {
+  display: none;
 }

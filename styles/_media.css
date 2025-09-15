@@ -10,6 +10,40 @@
   h1 {
     font-size: 2rem;
   }
+  .advantages__gallery {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+  .advantages__gallery-col {
+    margin-bottom: 2em;
+    max-width: initial;
+    flex-direction: row;
+    column-gap: 2rem;
+    justify-content: space-between;
+  }
+  .advantages__item-title {
+    line-height: 1;
+  }
+  .advantages__gallery-col:last-child {
+    margin-bottom: 0;
+  }
+  .advantages__item {
+    padding-right: 1em;
+    width: 33%;
+    height: initial;
+    min-height: 14.4rem;
+  }
+  .advantages__gallery-col:nth-child(2) .advantages__item:nth-child(3) .button {
+    font-size: 0.7rem;
+  }
+  .advantages__item--reset {
+    padding-right: 0;
+    justify-content: center;
+  }
+  .advantages__item--text-flex-end {
+    justify-content: center;
+  }
 }
 
 /* md <= Large (lg) */
@@ -30,6 +64,13 @@
   .first-screen__img {
     margin-top: 1em;
     justify-content: center;
+  }
+  .company__logo {
+    margin-bottom: 1em;
+    padding: 0;
+  }
+  .company__logo img {
+    width: 50%;
   }
 }
 
@@ -56,6 +97,9 @@
   .section--pt {
     padding-top: 2em;
   }
+  .section-header {
+    margin-bottom: 2em;
+  }
   .section-title--center {
     text-align: left;
   }
@@ -67,13 +111,60 @@
   }
   .laboratory__item-title {
     font-size: 1.125rem;
+    font-weight: 700;
+  }
+  .laboratory__item-img-block {
+    padding-left: 0;
+    justify-content: start;
+  }
+  .laboratory__item-number {
+    position: static;
+  }
+  .laboratory__item-picture {
+    display: none;
+  }
+  .laboratory__item-picture-mob {
+    margin-bottom: 1em;
+    display: flex;
+  }
+  .advantages__gallery-mob {
+    display: block;
+  }
+  .advantages__gallery {
+    display: none;
+  }
+  .advantages__item {
+    margin-top: 1.25em;
+    width: initial;
+  }
+  .advantages__item--reset {
+    min-height: initial;
+  }
+  .advantages__item .button {
+    margin-top: 1.4em;
+  }
+  .company__text .section-title {
+    text-align: center;
   }
 }
 
 /* xs <= Small (sm) */
 @media (max-width: 575.98px) {
+  .section {
+    padding: 3em 0;
+  }
   .header-mob .logo img {
     max-width: 7rem;
+  }
+  .footer {
+    padding: 4em 0em 2em;
+}
+  .footer .logo {
+    display: block;
+    text-align: center;
+  }
+  .footer .logo img {
+    width: 9rem;
   }
   .first-screen__title br {
     display: block;
@@ -86,6 +177,28 @@
     display: none;
   }
   .partners-img-mob {
+    display: block;
+  }
+  .education__text-wrapper {
+    margin-top: 1em;
+    height: initial;
+  }
+  .education__img-block {
+    padding-right: 0;
+  }
+  .advantages__item {
+    padding: 0 2em;
+  }
+  .advantages__item--reset {
+    padding: 0;
+  }
+    .company__logo img {
+    width: 100%;
+  }
+  .company__img img:nth-child(1) {
+    display: none;
+  }
+  .company__img img:nth-child(2) {
     display: block;
   }
 }
