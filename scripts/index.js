@@ -1,3 +1,5 @@
+// SWIPER SLIDER
+
 const swiperProducts = new Swiper(".swiper-products", {
   spaceBetween: 20,
   // loop: true,
@@ -13,7 +15,6 @@ const swiperProducts = new Swiper(".swiper-products", {
 });
 
 const swiperCertificate = new Swiper(".swiper-certificate", {
-  slidesPerView: 1,
   spaceBetween: 20,
   // loop: true,
   breakpoints: {
@@ -29,6 +30,27 @@ const swiperCertificate = new Swiper(".swiper-certificate", {
   },
 });
 
+// BURGER
+
 document.getElementById("burger-btn").addEventListener("click", function () {
-  document.getElementById("nav-mob").classList.toggle("show");
+  document.getElementById("nav-mob").classList.toggle("visible");
+});
+
+// CERTIFICATE
+
+document.getElementById("certificate").addEventListener("click", function (e) {
+  if (e.target.classList.contains("certificate-img-js")) {
+    console.log(1);
+    
+    document.getElementById("modal-certificate-img").src = e.target.dataset.src;
+    document.getElementById("modal").classList.add('visible')
+  }
+});
+
+// MODAL
+
+document.getElementById("modal").addEventListener("click", function (e) {
+  if (e.target.classList.contains("modal-close-js") || e.target.classList.contains("modal-bg-js")) {
+    this.classList.remove("visible");
+  }
 });

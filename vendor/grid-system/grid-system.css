@@ -1,7 +1,8 @@
 .container,
 .container-fluid {
     margin: 0 auto;
-    padding: 0 calc(var(--gutter) * 0.5);
+    /* padding: 0 calc(var(--gutter) * 0.5); */
+    padding: 0 1rem;
     width: 100%;
 }
 

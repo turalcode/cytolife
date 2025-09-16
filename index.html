@@ -275,7 +275,7 @@
                     <div class="products__item-info">
                       <div class="products__item-acces">
                         <img class="products__item-lock" src="./public/images/lock.svg" alt="#" />
-                        <div>Доступно для мед персонала</div>
+                        <div class="products__item-lock-text">Доступно для мед персонала</div>
                       </div>
 
                       <div class="products__item-icons">
@@ -919,7 +919,7 @@
       </section>
       <!-- /advantages -->
 
-      <section class="certificate section section--pt">
+      <section id="certificate" class="certificate section section--pt">
         <div class="container">
           <div class="section-header">
             <div class="row">
@@ -929,9 +929,8 @@
               <div class="col-md-8">
                 <h2 class="section-header-title">Сертификаты и документы</h2>
                 <div class="section-header-subtitle">
-                  Вся продукция Laboratory Cytolife имеет регистрационные
-                  удостоверения и<br />проходит проверку в соответствии с
-                  российским законодательством.
+                  Вся продукция Laboratory Cytolife имеет регистрационные удостоверения и<br />проходит проверку в
+                  соответствии с российским законодательством.
                 </div>
               </div>
             </div>
@@ -940,38 +939,68 @@
           <div class="swiper swiper-certificate">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="sertificate__item">
-                  <img src="./public/images/certificate-5.jpg" alt="#" />
+                <div class="certificate__item">
+                  <img
+                    class="certificate-img-js"
+                    data-src="./public/images/certificate-1-full.jpg"
+                    src="./public/images/certificate-1.jpg"
+                    alt="#"
+                  />
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="sertificate__item">
-                  <img src="./public/images/certificate-4.jpg" alt="#" />
+                <div class="certificate__item">
+                  <img
+                    class="certificate-img-js"
+                    data-src="./public/images/certificate-2-full.jpg"
+                    src="./public/images/certificate-2.jpg"
+                    alt="#"
+                  />
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="sertificate__item">
-                  <img src="./public/images/certificate-3.jpg" alt="#" />
+                <div class="certificate__item">
+                  <img
+                    class="certificate-img-js"
+                    data-src="./public/images/certificate-3-full.jpg"
+                    src="./public/images/certificate-3.jpg"
+                    alt="#"
+                  />
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="sertificate__item">
-                  <img src="./public/images/certificate-2.jpg" alt="#" />
+                <div class="certificate__item">
+                  <img
+                    class="certificate-img-js"
+                    data-src="./public/images/certificate-4-full.jpg"
+                    src="./public/images/certificate-4.jpg"
+                    alt="#"
+                  />
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="sertificate__item">
-                  <img src="./public/images/certificate-1.jpg" alt="#" />
+                <div class="certificate__item">
+                  <img
+                    class="certificate-img-js"
+                    data-src="./public/images/certificate-5-full.jpg"
+                    src="./public/images/certificate-5.jpg"
+                    alt="#"
+                  />
                 </div>
               </div>
 
               <div class="swiper-slide">
-                <div class="sertificate__item">
-                  <img src="./public/images/certificate-5.jpg" alt="#" />
+                <div class="certificate__item">
+                  <img
+                    class="certificate-img-js"
+                    data-src="./public/images/certificate-5-full.jpg"
+                    src="./public/images/certificate-5.jpg"
+                    alt="#"
+                  />
                 </div>
               </div>
             </div>
@@ -992,15 +1021,15 @@
               <div class="company__text">
                 <h2 class="section-title">Наука в красоте</h2>
                 <div>
-                  Мы соединяем научные исследования и клинический опыт, чтобы
-                  дать врачам надежные инструменты для работы с пациентами.
+                  Мы соединяем научные исследования и клинический опыт, чтобы дать врачам надежные инструменты для
+                  работы с пациентами.
                 </div>
               </div>
             </div>
             <div class="col-lg-5 col-md-6">
               <div class="company__img">
                 <img src="./public/images/bottle.jpg" alt="#" />
-                <img  src="./public/images/microscope.png" alt="#" />
+                <img src="./public/images/microscope.png" alt="#" />
               </div>
             </div>
           </div>
@@ -1008,6 +1037,19 @@
       </section>
       <!-- /company -->
     </main>
+
+    <div id="modal" class="modal">
+      <div class="modal__bg modal-bg-js">
+        <div class="modal__body">
+          <div id="modal-certificate" class="modal__certificate">
+            <img id="modal-certificate-img" src="#" alt="#" />
+          </div>
+
+          <div class="modal__close modal-close-js">&times;</div>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
 
     <footer class="footer">
       <div class="container">

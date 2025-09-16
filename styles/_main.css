@@ -191,6 +191,8 @@
   position: relative;
 }
 .user-menu:hover > .user-menu__list {
+  opacity: 1;
+  transform: translateY(0);
   visibility: visible;
 }
 .user-menu__list {
@@ -203,7 +205,9 @@
   background-color: #fff;
   border: 1px solid var(--accent-light);
   border-radius: var(--radius);
-  transform: translateX(-50%);
+  opacity: 0;
+  transform: translateX(-50%) translateY(2rem);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
   visibility: hidden;
 }
 .user-menu__list ul {
@@ -257,7 +261,7 @@
   transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
   visibility: hidden;
 }
-.nav-mob.show {
+.nav-mob.visible {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
@@ -331,6 +335,62 @@
 }
 .footer__copyright {
   text-align: center;
+}
+
+/* MODAL */
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  visibility: hidden;
+}
+.modal.visible {
+  visibility: visible;
+}
+.modal__bg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal__body {
+  position: relative;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
+  visibility: hidden;
+}
+.modal.visible .modal__body {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+.modal__close {
+  padding: 0.2em 0 0.3em;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  line-height: 0;
+  cursor: pointer;
+  transition: color var(--delay) var(--function);
+}
+.modal__close:hover {
+  color: black;
+}
+.modal__certificate {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.modal__certificate img {
+  width: 100%;
+  max-height: 90vh;
 }
 
 /* FIRST SCREEN */
@@ -615,13 +675,13 @@
 
 /* CERTIFICATE */
 
-.sertificate__item {
+.certificate__item {
   padding: 0.625em;
   border: 1px solid var(--secondary);
   border-radius: var(--radius);
   cursor: pointer;
 }
-.sertificate__item img {
+.certificate__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
