@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cytolife</title>
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/styles/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-4">
+            <a href="/" class="logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo.svg" alt="#" />
+            </a>
+          </div>
+
+          <div class="col-xl-6 col-lg-8">
+            <div class="row h-100">
+              <div class="col-4">
+                <div class="header__btn">
+                  <a href="tel:">Обратный звонок</a>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="header__contacts">
+                  <a href="#">+7 (499) 130-99-69</a>
+                  <div>с 10:00 до 18:30 (Пн-Пт)</div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="header__icons">
+                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/public/images/search.svg" alt="Поиск" /></a>
+
+                  <div class="user-menu">
+                    <a href="#">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/avatar.svg" alt="Аватар" />
+                    </a>
+
+                    <nav class="user-menu__list">
+                      <ul>
+                        <li class="user-menu__item">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/profile.svg" alt="#" />
+                          <a href="#">Мой профиль</a>
+                        </li>
+
+                        <li class="user-menu__item">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/cart.svg" alt="#" />
+                          <a href="#">Заказы</a>
+                        </li>
+
+                        <li class="user-menu__item">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/education.svg" alt="#" />
+                          <a href="#">Обучение</a>
+                        </li>
+
+                        <li class="user-menu__item">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/support.svg" alt="#" />
+                          <a href="#">Поддержка</a>
+                        </li>
+
+                        <li class="user-menu__item">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/refresh.svg" alt="#" />
+                          <a href="#">Смена пароля</a>
+                        </li>
+                      </ul>
+
+                      <hr />
+
+                      <ul>
+                        <li class="user-menu__item">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/logout.svg" alt="#" />
+                          <a href="#">Выход</a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+
+                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="Сердце" /></a>
+                  <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/public/images/cart.svg" alt="Корзина" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-mob">
+      <div class="container pos-r">
+        <div class="header-mob__row">
+          <div class="header-mob__item">
+            <div id="burger-btn" class="header-mob__burger">
+              <img class="light-theme" src="<?php echo get_template_directory_uri(); ?>/public/images/burger.svg" alt="#" />
+              <img class="dark-theme" src="<?php echo get_template_directory_uri(); ?>/public/images/burger-light.svg" alt="#" />
+            </div>
+          </div>
+          <div class="header-mob__item">
+            <a href="/" class="logo">
+              <img class="light-theme" src="<?php echo get_template_directory_uri(); ?>/public/images/logo.svg" alt="#" />
+              <img class="dark-theme" src="<?php echo get_template_directory_uri(); ?>/public/images/logo-light.svg" alt="#" />
+            </a>
+          </div>
+          <div class="header-mob__item">
+            <div class="header__icons">
+              <div class="user-menu">
+                <a class="light-theme" href="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/avatar.svg" alt="Аватар" />
+                </a>
+
+                <a id="user-menu-btn" class="dark-theme" href="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/avatar-light.svg" alt="Аватар" />
+                </a>
+
+                <nav class="user-menu__list">
+                  <ul>
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/profile.svg" alt="#" />
+                      <a href="#">Мой профиль</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/cart.svg" alt="#" />
+                      <a href="#">Заказы</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/education.svg" alt="#" />
+                      <a href="#">Обучение</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/support.svg" alt="#" />
+                      <a href="#">Поддержка</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/refresh.svg" alt="#" />
+                      <a href="#">Смена пароля</a>
+                    </li>
+                  </ul>
+
+                  <hr />
+
+                  <ul>
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/logout.svg" alt="#" />
+                      <a href="#">Выход</a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <nav id="user-menu-list-mob" class="user-menu__list-mob">
+                  <ul>
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/profile-light.svg" alt="#" />
+                      <a href="#">Мой профиль</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/cart-light.svg" alt="#" />
+                      <a href="#">Заказы</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/education-light.svg" alt="#" />
+                      <a href="#">Обучение</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/support-light.svg" alt="#" />
+                      <a href="#">Поддержка</a>
+                    </li>
+
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/refresh-light.svg" alt="#" />
+                      <a href="#">Смена пароля</a>
+                    </li>
+                  </ul>
+
+                  <hr />
+
+                  <ul>
+                    <li class="user-menu__item">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/logout-light.svg" alt="#" />
+                      <a href="#">Выход</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <a href="#">
+                <img class="light-theme" src="<?php echo get_template_directory_uri(); ?>/public/images/cart.svg" alt="Корзина" />
+                <img class="dark-theme" src="<?php echo get_template_directory_uri(); ?>/public/images/cart-light.svg" alt="Корзина" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <nav id="nav-mob" class="nav-mob">
+          <ul>
+            <li class="nav-mob__accent">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-right.svg" alt="#" />
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Пилинги</a>
+            </li>
+            <li>
+              <a href="#">Профессиональная линия</a>
+            </li>
+            <li>
+              <a href="#">Мероприятия</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+            <li class="nav-mob__icon">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart-green.svg" alt="#" />
+              <a href="#">Избранное</a>
+            </li>
+          </ul>
+
+          <a class="nav-mob__tel" href="tel:+74991309969">+7 (499) 130-99-69</a>
+
+          <div class="header__btn">
+            <a href="tel:">Обратный звонок</a>
+          </div>
+          <div class="header__contacts">
+            <div class="nav-mob__schedule">с 10:00 до 18:30 (Пн-Пт)</div>
+          </div>
+
+          <div class="header-mob__search">
+            <input class="input-search" style="background: no-repeat url(<?php echo get_template_directory_uri(); ?>/public/images/search-light.svg); background-position: left;" type="text" name="search" placeholder="Введите запрос" />
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Препараты</a></li>
+          <li><a href="#">Пилинги</a></li>
+          <li><a href="#">Профессиональная линия</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Статьи</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="first-screen section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="first-screen__title">Профессиональные препараты для эстетической&nbsp;<br />медицины</h1>
+            <div class="first-screen__subtitle">
+              Разрабатываем и производим в России.<br />
+              Для специалистов, которые ценят<br />
+              результат и безопасность.
+            </div>
+
+            <a href="#" class="button first-screen--button">В каталог</a>
+          </div>
+          <div class="col-lg-6">
+            <div class="first-screen__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/first-screen.png" alt="#" />
+            </div>
+          </div>
+        </div>
+
+        <div class="first-screen__partners">
+          <h3 class="first-screen__partners-title">Сотрудничаем с ведущими научными центрами</h3>
+
+          <ul class="first-screen__partners-list">
+            <li>
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/partner-1.svg" alt="#" />
+            </li>
+            <li>
+              <img class="partners-img-desktop" src="<?php echo get_template_directory_uri(); ?>/public/images/partner-2.svg" alt="#" />
+              <img class="partners-img-mob" src="<?php echo get_template_directory_uri(); ?>/public/images/partner-2-mob.svg" alt="#" />
+            </li>
+            <li>
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/partner-3.svg" alt="#" />
+            </li>
+            <li>
+              <img class="partners-img-desktop" src="<?php echo get_template_directory_uri(); ?>/public/images/partner-4.svg" alt="#" />
+              <img class="partners-img-mob" src="<?php echo get_template_directory_uri(); ?>/public/images/partner-4-mob.svg" alt="#" />
+            </li>
+            <li>
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/partner-5.svg" alt="#" />
+            </li>
+            <li>
+              <img class="partners-img-desktop" src="<?php echo get_template_directory_uri(); ?>/public/images/partner-6.svg" alt="#" />
+              <img class="partners-img-mob" src="<?php echo get_template_directory_uri(); ?>/public/images/partner-6-mob.svg" alt="#" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /first-screen -->
+
+    <section class="products section">
+      <div class="container">
+        <h2 class="products__title section-title section-title--center">
+          <span class="mini-logo">Открытие</span>Новинки
+        </h2>
+
+        <div class="swiper swiper-products">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces">
+                      <img class="products__item-lock" src="<?php echo get_template_directory_uri(); ?>/public/images/lock.svg" alt="#" />
+                      <div class="products__item-lock-text">Доступно для мед персонала</div>
+                    </div>
+
+                    <div class="products__item-icons">
+                      <a href="#" class="products__item-like">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-1.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#"><b>Ambre Life</b></a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">Цена доступна при авторизации</div>
+
+                    <div class="products__item-footer">
+                      <a href="#" class="button h-100">Авторизация</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces"></div>
+
+                    <a href="#" class="products__item-like">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                    </a>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-2.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#">
+                      <b>Эмульсия восстанавливающая<br />Repare SPF 30++</b>
+                    </a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">1000 руб.</div>
+
+                    <div class="products__item-footer">
+                      <div class="products__item-counter">
+                        <a href="#" class="products__item-minus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/minus.svg" alt="#" />
+                        </a>
+                        <div class="products__item-quantity">12</div>
+                        <a href="#" class="products__item-plus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/plus.svg" alt="#" />
+                        </a>
+                      </div>
+                      <a href="#" class="button h-100">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces"></div>
+
+                    <div class="products__item-icons">
+                      <div class="products__item-icon-text">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/new.svg" alt="#" /><span>Новинка</span>
+                      </div>
+                      <a href="#" class="products__item-like">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-3.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#">
+                      <b>Крем Ultra Hydration 30</b>
+                    </a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">1000 руб.</div>
+
+                    <div class="products__item-footer">
+                      <div class="products__item-counter">
+                        <a href="#" class="products__item-minus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/minus.svg" alt="#" />
+                        </a>
+                        <div class="products__item-quantity">1</div>
+                        <a href="#" class="products__item-plus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/plus.svg" alt="#" />
+                        </a>
+                      </div>
+                      <a href="#" class="button h-100">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces"></div>
+
+                    <div class="products__item-icons">
+                      <div class="products__item-icon-text">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/new.svg" alt="#" /><span>Новинка</span>
+                      </div>
+                      <a href="#" class="products__item-like">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-3.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#">
+                      <b>Крем Ultra Hydration 30</b>
+                    </a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">1000 руб.</div>
+
+                    <div class="products__item-footer">
+                      <div class="products__item-counter">
+                        <a href="#" class="products__item-minus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/minus.svg" alt="#" />
+                        </a>
+                        <div class="products__item-quantity">1</div>
+                        <a href="#" class="products__item-plus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/plus.svg" alt="#" />
+                        </a>
+                      </div>
+                      <a href="#" class="button h-100">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /products -->
+
+    <section class="products section products--popular">
+      <div class="container">
+        <h2 class="products__title section-title section-title--center">
+          <span class="mini-logo">Лидеры</span>Популярные
+        </h2>
+
+        <div class="swiper swiper-products">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces">
+                      <img class="products__item-lock" src="<?php echo get_template_directory_uri(); ?>/public/images/lock.svg" alt="#" />
+                      <div>Доступно для мед персонала</div>
+                    </div>
+
+                    <div class="products__item-icons">
+                      <a href="#" class="products__item-like">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-1.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#"><b>Ambre Life</b></a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">Цена доступна при авторизации</div>
+
+                    <div class="products__item-footer">
+                      <a href="#" class="button h-100">Авторизация</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces"></div>
+
+                    <a href="#" class="products__item-like">
+                      <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                    </a>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-2.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#">
+                      <b>Эмульсия восстанавливающая<br />Repare SPF 30++</b>
+                    </a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">1000 руб.</div>
+
+                    <div class="products__item-footer">
+                      <div class="products__item-counter">
+                        <a href="#" class="products__item-minus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/minus.svg" alt="#" />
+                        </a>
+                        <div class="products__item-quantity">12</div>
+                        <a href="#" class="products__item-plus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/plus.svg" alt="#" />
+                        </a>
+                      </div>
+                      <a href="#" class="button h-100">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces"></div>
+
+                    <div class="products__item-icons">
+                      <div class="products__item-icon-text">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/new.svg" alt="#" /><span>Новинка</span>
+                      </div>
+                      <a href="#" class="products__item-like">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-3.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#">
+                      <b>Крем Ultra Hydration 30</b>
+                    </a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">1000 руб.</div>
+
+                    <div class="products__item-footer">
+                      <div class="products__item-counter">
+                        <a href="#" class="products__item-minus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/minus.svg" alt="#" />
+                        </a>
+                        <div class="products__item-quantity">1</div>
+                        <a href="#" class="products__item-plus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/plus.svg" alt="#" />
+                        </a>
+                      </div>
+                      <a href="#" class="button h-100">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="products__item">
+                <div class="products__item-header">
+                  <div class="products__item-info">
+                    <div class="products__item-acces"></div>
+
+                    <div class="products__item-icons">
+                      <div class="products__item-icon-text">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/new.svg" alt="#" /><span>Новинка</span>
+                      </div>
+                      <a href="#" class="products__item-like">
+                        <img src="<?php echo get_template_directory_uri(); ?>/public/images/heart.svg" alt="#" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <a class="products__item-picture" href="#">
+                    <img src="<?php echo get_template_directory_uri(); ?>/public/images/product-3.png" alt="#" />
+                  </a>
+                </div>
+
+                <div class="products__item-footer-wrapper">
+                  <div class="products__item-title">
+                    <a href="#">
+                      <b>Крем Ultra Hydration 30</b>
+                    </a>
+                  </div>
+
+                  <div>
+                    <div class="products__item-price">1000 руб.</div>
+
+                    <div class="products__item-footer">
+                      <div class="products__item-counter">
+                        <a href="#" class="products__item-minus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/minus.svg" alt="#" />
+                        </a>
+                        <div class="products__item-quantity">1</div>
+                        <a href="#" class="products__item-plus">
+                          <img src="<?php echo get_template_directory_uri(); ?>/public/images/plus.svg" alt="#" />
+                        </a>
+                      </div>
+                      <a href="#" class="button h-100">В корзину</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /products products--popular -->
+
+    <section class="laboratory section section--pt">
+      <div class="container">
+        <div class="section-header">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="mini-logo">Инновации</span>
+            </div>
+            <div class="col-md-8">
+              <h2 class="section-header-title">Laboratory Cytolife производит</h2>
+              <div class="section-header-subtitle">
+                Laboratory Cytolife — российская компания, специализирующаяся на разработке и производстве препаратов
+                для профессиональной косметологии. В основе — собственные исследования, клинические испытания и работа
+                с экспертами в области эстетической медицины.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="laboratory__item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="laboratory__item-img-block">
+                <div class="laboratory__item-number">01</div>
+
+                <div class="laboratory__item-picture">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/laboratory-1.png" alt="#" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="laboratory__item-text">
+                <h3 class="laboratory__item-title">Препараты для инъекционной косметологии</h3>
+
+                <div class="laboratory__item-picture-mob">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/laboratory-1.png" alt="#" />
+                </div>
+
+                <div>
+                  Средства для биоревитализации, мезотерапии и коррекции возрастных изменений. Высокая эффективность,
+                  подтверждённая исследованиями.
+                </div>
+
+                <a class="button-light button-light--laboratory-item" href="#">Напишите нам
+                  <img class="button-light-img" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-dark.svg" alt="#" />
+                  <img class="button-light-img-hover" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-bg-green.svg" alt="#" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="laboratory__item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="laboratory__item-img-block">
+                <div class="laboratory__item-number">02</div>
+
+                <div class="laboratory__item-picture">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/laboratory-2.png" alt="#" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="laboratory__item-text">
+                <h3 class="laboratory__item-title">Химические пилинги</h3>
+
+                <div class="laboratory__item-picture-mob">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/laboratory-2.png" alt="#" />
+                </div>
+
+                <div>Линейка пилингов с предсказуемым результатом и контролируемым воздействием.</div>
+
+                <a class="button-light button-light--laboratory-item" href="#">Напишите нам
+                  <img class="button-light-img" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-dark.svg" alt="#" />
+                  <img class="button-light-img-hover" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-bg-green.svg" alt="#" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="laboratory__item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="laboratory__item-img-block">
+                <div class="laboratory__item-number">03</div>
+
+                <div class="laboratory__item-picture">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/laboratory-3.png" alt="#" />
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="laboratory__item-text">
+                <h3 class="laboratory__item-title">Профессиональная уходовая линия</h3>
+
+                <div class="laboratory__item-picture-mob">
+                  <img src="<?php echo get_template_directory_uri(); ?>/public/images/laboratory-3.png" alt="#" />
+                </div>
+
+                <div>
+                  Профессиональная уходовая линия. Средства для постпроцедурного восстановления и поддержания здоровья
+                  кожи.
+                </div>
+
+                <a class="button-light button-light--laboratory-item" href="#">Напишите нам
+                  <img class="button-light-img" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-dark.svg" alt="#" />
+                  <img class="button-light-img-hover" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-bg-green.svg" alt="#" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /laboratory -->
+
+    <section class="education section section--pt">
+      <div class="container">
+        <div class="section-header">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="mini-logo">Развитие</span>
+            </div>
+            <div class="col-md-8">
+              <h2 class="section-header-title">Обучение для специалистов</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="education__img-block">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/education.jpg" alt="#" />
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="education__text-wrapper">
+              <div>
+                Проводим мастер-классы, вебинары и обучающие курсы для врачей-<br />косметологов.<br />
+                Помогаем освоить технику работы с препаратами и получать максимальный<br />
+                результат для пациентов.
+              </div>
+
+              <div class="education__btn">
+                <a class="button" href="#">Перейти в личный кабинет</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /education -->
+
+    <section class="advantages section section--pt">
+      <div class="container">
+        <div class="section-header">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="mini-logo">Преимущества</span>
+            </div>
+            <div class="col-md-8">
+              <h2 class="section-header-title">Почему выбирают CYTOLIFE</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages__gallery" style="background: no-repeat url(<?php echo get_template_directory_uri(); ?>/public/images/microbe.png); background-position: 45% 50%;">
+          <div class="advantages__gallery-col">
+            <div class="advantages__item advantages__item--bg" style="background: no-repeat url(<?php echo get_template_directory_uri(); ?>/public/images/advantages-item-bg.jpg); background-size: cover;">
+              <div class="advantages__item-title">10+ лет</div>
+              <div class="advantages__item-subtitle">собственных разработок</div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__item-title">100 000+</div>
+              <div class="advantages__item-subtitle">процедур проводим ежегодно</div>
+            </div>
+
+            <div class="advantages__item">
+              <div class="advantages__item-title">80+</div>
+              <div class="advantages__item-subtitle">партнёров в России и СНГ</div>
+            </div>
+          </div>
+
+          <div class="advantages__gallery-col">
+            <div class="advantages__item advantages__item--reset">
+              <div>
+                Эффективность продуктов подтверждена клиническими испытаниями. Собственное производство в Москве
+                обеспечивает полный контроль качества на каждом этапе.
+              </div>
+              <a href="#" class="button">О компании</a>
+            </div>
+
+            <div class="advantages__item advantages__item--reset"></div>
+
+            <div class="advantages__item advantages__item--reset advantages__item--text-flex-end">
+              <div>
+                Мы сотрудничаем с дистрибьюторами в России и странах СНГ. Предоставляем полную информационную
+                поддержку, обучающие материалы и рекламные инструменты для продвижения продукции.
+              </div>
+              <a href="#" class="button">Стать дистрибьютором</a>
+            </div>
+          </div>
+
+          <div class="advantages__gallery-col">
+            <div class="advantages__item">
+              <div class="advantages__item-title">600+</div>
+              <div class="advantages__item-subtitle">Обучающих вебинаров и мастер-классов</div>
+            </div>
+
+            <div class="advantages__item advantages__item--reset advantages__item--height">
+              <div>
+                Мы регулярно проводим обучение специалистов, чтобы они могли работать с продуктами на профессиональном
+                уровне. Программы включают теоретическую базу и практические мастер-классы под руководством экспертов.
+              </div>
+            </div>
+
+            <div class="advantages__item advantages__item--reset advantages__item--height advantages__item--hidden">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/advantages-item-img.jpg" alt="#" />
+            </div>
+          </div>
+        </div>
+
+        <div class="advantages__gallery-mob">
+          <div class="advantages__item advantages__item--bg" style="background: no-repeat url(<?php echo get_template_directory_uri(); ?>/public/images/advantages-item-bg.jpg); background-size: cover;">
+            <div class="advantages__item-title">10+ лет</div>
+            <div class="advantages__item-subtitle">собственных разработок</div>
+          </div>
+
+          <div class="advantages__item advantages__item--reset">
+            <div>
+              Эффективность продуктов подтверждена клиническими испытаниями. Собственное производство в Москве
+              обеспечивает полный контроль качества на каждом этапе.
+            </div>
+            <a href="#" class="button">О компании</a>
+          </div>
+
+          <div class="advantages__item advantages__item--reset advantages__item--height advantages__item--hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/images/advantages-item-img.jpg" alt="#" />
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__item-title">100 000+</div>
+            <div class="advantages__item-subtitle">процедур проводим ежегодно</div>
+          </div>
+
+          <div class="advantages__item pos-r">
+            <img class="advantages__item-decor" src="<?php echo get_template_directory_uri(); ?>/public/images/microbe.png" alt="#" />
+            <div class="advantages__item-title">600+</div>
+            <div class="advantages__item-subtitle">Обучающих вебинаров и мастер-классов</div>
+          </div>
+
+          <div class="advantages__item advantages__item--reset advantages__item--height">
+            <div>
+              Мы регулярно проводим обучение специалистов, чтобы они могли работать с продуктами на профессиональном
+              уровне. Программы включают теоретическую базу и практические мастер-классы под руководством экспертов.
+            </div>
+          </div>
+
+          <div class="advantages__item">
+            <div class="advantages__item-title">80+</div>
+            <div class="advantages__item-subtitle">партнёров в России и СНГ</div>
+          </div>
+
+          <div class="advantages__item advantages__item--reset advantages__item--text-flex-end">
+            <div>
+              Мы сотрудничаем с дистрибьюторами в России и странах СНГ. Предоставляем полную информационную поддержку,
+              обучающие материалы и рекламные инструменты для продвижения продукции.
+            </div>
+            <a href="#" class="button">Стать дистрибьютором</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /advantages -->
+
+    <section id="certificate" class="certificate section section--pt">
+      <div class="container">
+        <div class="section-header">
+          <div class="row">
+            <div class="col-md-4">
+              <span class="mini-logo">Экспертиза</span>
+            </div>
+            <div class="col-md-8">
+              <h2 class="section-header-title">Сертификаты и документы</h2>
+              <div class="section-header-subtitle">
+                Вся продукция Laboratory Cytolife имеет регистрационные удостоверения и<br />проходит проверку в
+                соответствии с российским законодательством.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper swiper-certificate">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="certificate__item">
+                <img
+                  class="certificate-img-js"
+                  data-src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-1-full.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-1.jpg"
+                  alt="#" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="certificate__item">
+                <img
+                  class="certificate-img-js"
+                  data-src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-2-full.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-2.jpg"
+                  alt="#" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="certificate__item">
+                <img
+                  class="certificate-img-js"
+                  data-src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-3-full.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-3.jpg"
+                  alt="#" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="certificate__item">
+                <img
+                  class="certificate-img-js"
+                  data-src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-4-full.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-4.jpg"
+                  alt="#" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="certificate__item">
+                <img
+                  class="certificate-img-js"
+                  data-src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-5-full.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-5.jpg"
+                  alt="#" />
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="certificate__item">
+                <img
+                  class="certificate-img-js"
+                  data-src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-5-full.jpg"
+                  src="<?php echo get_template_directory_uri(); ?>/public/images/certificate-5.jpg"
+                  alt="#" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /certificate -->
+
+    <section class="company section section--pt">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="company__logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo.svg" alt="#" />
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="company__text">
+              <h2 class="section-title">Наука в красоте</h2>
+              <div>
+                Мы соединяем научные исследования и клинический опыт, чтобы дать врачам надежные инструменты для
+                работы с пациентами.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-6">
+            <div class="company__img">
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/bottle.jpg" alt="#" />
+              <img src="<?php echo get_template_directory_uri(); ?>/public/images/microscope.png" alt="#" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /company -->
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal__bg modal-bg-js">
+      <div class="modal__body">
+        <div id="modal-certificate" class="modal__certificate">
+          <img id="modal-certificate-img" src="#" alt="#" />
+        </div>
+
+        <div class="modal__close modal-close-js">&times;</div>
+      </div>
+    </div>
+  </div>
+  <!-- /modal -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <a href="/" class="logo">
+            <img src="<?php echo get_template_directory_uri(); ?>/public/images/logo-light.svg" alt="#" />
+          </a>
+
+          <div>Разработка и производство препаратов для эстетической медицины</div>
+
+          <a class="button-light button-light--footer-btn" href="#">Напишите нам
+            <img class="button-light-img" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-light.svg" alt="#" />
+            <img class="button-light-img-hover" src="<?php echo get_template_directory_uri(); ?>/public/images/arrow-circle-bg-green.svg" alt="#" /></a>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer__title">Для связи</h4>
+          <div>
+            <a class="footer__tel" href="tel:74991309969">+7 (499) 130-99-69</a>
+          </div>
+          <div>
+            <a class="footer__mail" href="mailto:info@cytolife.ru">info@cytolife.ru</a>
+          </div>
+          <div class="footer__soc">
+            <a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/public/images/vk-circle.svg" alt="Вконтакте" /></a><a href="#"> <img src="<?php echo get_template_directory_uri(); ?>/public/images/tg-circle.svg" alt="Телеграм" /></a>
+          </div>
+
+          <address>123242, г. Москва, ул. Дружинниковская, д.11/2, помещ.1/1</address>
+        </div>
+
+        <div class="col-lg-4">
+          <h4 class="footer__title">Информация</h4>
+
+          <nav class="footer__nav">
+            <ul>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li>
+                <a href="#">Политика конфиденциальности</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+              <li><a href="#">Договор-оферта</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <hr />
+
+      <div class="footer__copyright">Copyright  © 2019 - 2025 | ООО «Медтендергруп»</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/scripts/index.js"></script>
+  </footer>
+</body>
+
+</html>

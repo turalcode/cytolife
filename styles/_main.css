@@ -1,6 +1,14 @@
 .help-height {
   height: 100vh;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
+.icon-search {
+  fill: none;
+  stroke: orange;
+  stroke-width: 2;
+}
 .pos-r {
   position: relative;
 }
@@ -258,13 +266,13 @@
 
 .nav-mob {
   padding: 2.5em 3em;
-  width: 100%;
+  width: calc(100% - 1rem);
   position: absolute;
-  left: 0;
+  left: 0.5rem;
   z-index: 10;
   background-color: var(--light-grey);
   opacity: 0;
-  border-radius: 2rem;
+  border-radius: var(--radius);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   transform: translateY(2rem);
   transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
@@ -614,6 +622,9 @@
 
 /* ADVANTAGES */
 
+.advantages {
+  overflow: hidden;
+}
 .advantages__gallery {
   display: flex;
   column-gap: 2.5rem;
@@ -676,10 +687,9 @@
   display: none;
 }
 .advantages__item-decor {
-  display: none;
   position: absolute;
   top: -40%;
-  left: 50%;
+  left: 40%;
 }
 
 /* CERTIFICATE */
