@@ -95,19 +95,25 @@
           <div class="header-mob__row">
             <div class="header-mob__item">
               <div id="burger-btn" class="header-mob__burger">
-                <img src="./public/images/burger.svg" alt="#" />
+                <img class="light-theme" src="./public/images/burger.svg" alt="#" />
+                <img class="dark-theme" src="./public/images/burger-light.svg" alt="#" />
               </div>
             </div>
             <div class="header-mob__item">
               <a href="/" class="logo">
-                <img src="./public/images/logo.svg" alt="#" />
+                <img class="light-theme" src="./public/images/logo.svg" alt="#" />
+                <img class="dark-theme" src="./public/images/logo-light.svg" alt="#" />
               </a>
             </div>
             <div class="header-mob__item">
               <div class="header__icons">
                 <div class="user-menu">
-                  <a href="#">
+                  <a class="light-theme" href="#">
                     <img src="./public/images/avatar.svg" alt="Аватар" />
+                  </a>
+
+                  <a id="user-menu-btn" class="dark-theme" href="#">
+                    <img src="./public/images/avatar-light.svg" alt="Аватар" />
                   </a>
 
                   <nav class="user-menu__list">
@@ -147,9 +153,50 @@
                       </li>
                     </ul>
                   </nav>
+
+                  <nav id="user-menu-list-mob" class="user-menu__list-mob">
+                    <ul>
+                      <li class="user-menu__item">
+                        <img src="./public/images/profile-light.svg" alt="#" />
+                        <a href="#">Мой профиль</a>
+                      </li>
+
+                      <li class="user-menu__item">
+                        <img src="./public/images/cart-light.svg" alt="#" />
+                        <a href="#">Заказы</a>
+                      </li>
+
+                      <li class="user-menu__item">
+                        <img src="./public/images/education-light.svg" alt="#" />
+                        <a href="#">Обучение</a>
+                      </li>
+
+                      <li class="user-menu__item">
+                        <img src="./public/images/support-light.svg" alt="#" />
+                        <a href="#">Поддержка</a>
+                      </li>
+
+                      <li class="user-menu__item">
+                        <img src="./public/images/refresh-light.svg" alt="#" />
+                        <a href="#">Смена пароля</a>
+                      </li>
+                    </ul>
+
+                    <hr />
+
+                    <ul>
+                      <li class="user-menu__item">
+                        <img src="./public/images/logout-light.svg" alt="#" />
+                        <a href="#">Выход</a>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
 
-                <a href="#"><img src="./public/images/cart.svg" alt="Корзина" /></a>
+                <a href="#">
+                  <img class="light-theme" src="./public/images/cart.svg" alt="Корзина" />
+                  <img class="dark-theme" src="./public/images/cart-light.svg" alt="Корзина" />
+                </a>
               </div>
             </div>
           </div>
