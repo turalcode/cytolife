@@ -172,8 +172,18 @@
     color: var(--light-grey);
     background-color: var(--secondary);
   }
-  .header-mob .logo img {
+  .header-mob__row .logo img {
     max-width: 7rem;
+  }
+  .logo__dark {
+    display: none;
+  }
+  .logo__light {
+    display: block;
+  }
+
+  .header-mob__burger .icon {
+    stroke: var(--light-grey);
   }
   .header__icons {
     position: static;
