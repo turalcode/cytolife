@@ -165,12 +165,6 @@
   h1 {
     font-size: 1.8rem;
   }
-  .light-theme {
-    display: none;
-  }
-  .dark-theme {
-    display: block;
-  }
   .header {
     background-color: var(--secondary);
   }
@@ -189,9 +183,6 @@
     position: static;
   }
   .user-menu__list {
-    display: none;
-  }
-  .user-menu__list-mob {
     width: calc(100% - 1rem);
     top: 5rem;
     left: 0.5rem;
@@ -202,14 +193,17 @@
     border-radius: var(--radius);
     transform: translateX(0) translateY(2rem);
   }
-  .user-menu__list-mob.visible {
-    opacity: 1;
+  .user-menu:hover > .user-menu__list {
     transform: translateX(0) translateY(0);
-    visibility: visible;
   }
-  .input-search {
+  .icon--light {
+    stroke: var(--light-grey);
+  }
+  .icon-user--light {
+    fill: var(--light-grey);
+  }
+  .search {
     border-bottom-color: var(--light-grey);
-    background: no-repeat left url("/public/images/search-light.svg");
   }
   .footer {
     padding: 4em 0em 2em;

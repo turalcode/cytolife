@@ -4,16 +4,22 @@
 .overflow-hidden {
   overflow: hidden;
 }
-.icon-search {
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
   fill: none;
-  stroke: orange;
-  stroke-width: 2;
+  stroke: var(--secondary);
+  stroke-width: 1.5px;
+  transition: stroke var(--delay) var(--function);
+}
+.icon-user {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: var(--secondary);
+  transition: fill var(--delay) var(--function);
 }
 .pos-r {
   position: relative;
-}
-.dark-theme {
-  display: none;
 }
 .main {
   padding: 2em 0;
@@ -164,8 +170,14 @@
   align-items: flex-end;
   column-gap: 1.5rem;
 }
-.header__icons img {
-  width: 1.25rem;
+.header__icons a {
+  line-height: 1.25rem;
+}
+.header__icons .icon:hover {
+  stroke: var(--accent);
+}
+.header__icons .icon-user:hover {
+  fill: var(--accent);
 }
 
 /* HEADER MOBILE */
@@ -189,24 +201,34 @@
 
 /* SEARCH */
 
-.input-search {
-  padding: 0 0 0.2em 2em;
-  width: 100%;
+.search {
+  margin-top: 1.25em;
+  padding: 0 0 0.2em 2.5em;
+  position: relative;
   border-bottom: 1px solid var(--secondary);
-  background: no-repeat left url("/public/images/search.svg");
+}
+.search .icon {
+  position: absolute;
+  top: 50%;
+  left: 0.625rem;
+  transform: translateY(-50%);
+}
+.search input {
+  width: 100%;
+  background: none;
 }
 
 /* USER MENU */
 
 .user-menu {
   position: relative;
+  line-height: 1.25rem;
 }
 .user-menu:hover > .user-menu__list {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
 }
-.user-menu__list-mob,
 .user-menu__list {
   padding: 2em 0;
   min-width: 20rem;
@@ -222,10 +244,6 @@
   transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
   visibility: hidden;
 }
-.user-menu__list-mob {
-  display: none;
-}
-.user-menu__list-mob ul,
 .user-menu__list ul {
   padding: 0 2em;
 }
@@ -237,11 +255,15 @@
 .user-menu__item:first-child {
   margin-top: 0;
 }
-.user-menu__item img {
-  width: 1.25rem;
-}
 .user-menu__item a {
-  margin-left: 0.8em;
+  display: flex;
+}
+.user-menu__item .icon,
+.user-menu__item .icon-user {
+  margin-right: 0.8em;
+}
+.user-menu__item a:hover .icon {
+  stroke: var(--accent);
 }
 .user-menu hr {
   margin: 1.5em 0;
@@ -295,10 +317,11 @@
 .nav-mob__accent img {
   width: 1.25rem;
 }
-.nav-mob__icon {
-  margin-left: 0.5em;
-  display: flex;
-  align-items: center;
+.nav-mob__icon .icon {
+  margin-right: 0.625em;
+  position: relative;
+  top: -0.1rem;
+  stroke: var(--accent);
 }
 .nav-mob__tel {
   margin: 0.8em 0 1.2em;
