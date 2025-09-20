@@ -32,14 +32,6 @@ const swiperCertificate = new Swiper(".swiper-certificate", {
 
 // BURGER AND USER MENU
 
-// function fixBody() {
-//   document.getElementById("nav-mob").classList.contains("visible") ||
-//   document.getElementById("user-menu-list-mob").classList.contains("visible") ||
-//   document.getElementById("modal").classList.contains("visible")
-//     ? document.body.classList.add("overflow-hidden")
-//     : document.body.classList.remove("overflow-hidden");
-// }
-
 document.getElementById("burger-btn").addEventListener("click", function (e) {
   document.getElementById("user-menu-list-mob").classList.remove("visible");
   document.getElementById("nav-mob").classList.toggle("visible");
@@ -53,14 +45,15 @@ document.getElementById("user-menu-btn").addEventListener("click", function (e) 
 
 // CERTIFICATE
 
-document.getElementById("certificate").addEventListener("click", function (e) {
-  if (e.target.classList.contains("certificate-img-js")) {
-    document.getElementById("modal-certificate-img").src = e.target.dataset.src;
-    document.getElementById("modal").classList.add("visible");
-    document.body.classList.add("overflow-hidden");
-  }
-});
-
+if (document.getElementById("certificate")) {
+  document.getElementById("certificate").addEventListener("click", function (e) {
+    if (e.target.classList.contains("certificate-img-js")) {
+      document.getElementById("modal-certificate-img").src = e.target.dataset.src;
+      document.getElementById("modal").classList.add("visible");
+      document.body.classList.add("overflow-hidden");
+    }
+  });
+}
 // MODAL
 
 document.getElementById("modal").addEventListener("click", function (e) {

@@ -68,6 +68,9 @@
     margin-top: 1em;
     justify-content: center;
   }
+  .products__item-lock-text {
+    display: none;
+  }
   .company__logo {
     margin-bottom: 1em;
     padding: 0;
@@ -77,6 +80,9 @@
   }
   .products__item-picture img {
     max-width: 16rem;
+  }
+  .catalog__list {
+    column-gap: 1.25rem;
   }
 }
 
@@ -152,6 +158,15 @@
   .company__text .section-title {
     text-align: center;
   }
+  .catalog-info {
+    margin-top: 2em;
+  }
+  .catalog-info__text {
+    margin: 2em 0 1.25em;
+  }
+  .catalog-info__img img {
+    width: 100%;
+  }
 }
 
 /* xs <= Small (sm) */
@@ -159,8 +174,11 @@
   .main {
     padding: 0 0 2em;
   }
-  .section {
-    padding: 3em 0;
+  .breadcrumbs {
+    margin-top: 1em;
+  }
+  .section--f-screen {
+    padding: 1em 0 0;
   }
   h1 {
     font-size: 1.8rem;
@@ -181,7 +199,6 @@
   .logo__light {
     display: block;
   }
-
   .header-mob__burger .icon {
     stroke: var(--light-grey);
   }
@@ -262,9 +279,6 @@
   }
   .products__item {
     padding: 1em;
-  }
-  .products__item-lock-text {
-    display: none;
   }
   .products__item-picture img {
     max-height: 10rem;

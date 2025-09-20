@@ -2,14 +2,26 @@
   height: 100vh;
 }
 .overflow-hidden {
-  overflow: hidden;
+  overflow-y: hidden;
+}
+.pos-r {
+  position: relative;
+}
+.h-100 {
+  height: 100%;
+}
+.pt-0 {
+  padding: 0 !important;
+}
+.pb-1 {
+  padding-bottom: 1em !important;
 }
 .icon {
   width: 1.25rem;
   height: 1.25rem;
   fill: none;
   stroke: var(--secondary);
-  stroke-width: 2px;
+  stroke-width: 1.5px;
   transition: stroke var(--delay) var(--function);
 }
 .icon-user {
@@ -18,17 +30,18 @@
   fill: var(--secondary);
   transition: fill var(--delay) var(--function);
 }
-.pos-r {
-  position: relative;
-}
 .main {
-  padding: 2em 0;
+  padding: 3em 0 2em;
 }
-.h-100 {
-  height: 100%;
+.breadcrumbs {
+  font-size: 0.875rem;
+  color: var(--deep-grey);
 }
-.pb-1 {
-  padding-bottom: 1em;
+.breadcrumbs a.active {
+  color: var(--secondary);
+}
+.breadcrumbs span {
+  margin: 0.4em;
 }
 .section {
   padding: 2em 0;
@@ -54,11 +67,10 @@
   margin-top: 0.7rem;
 }
 .section-header-title {
-  /* margin-bottom: 1.5em; */
   text-transform: uppercase;
 }
 .button {
-  padding: 1.5em;
+  padding: 1.3em 1.5em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -71,20 +83,29 @@
   letter-spacing: 1px;
   background-color: var(--secondary);
   border-radius: calc(3em);
-  transition: background-color var(--delay) var(--function),
+  transition: background-color var(--delay) var(--function), color var(--delay) var(--function);
+}
+.button--bg-light {
+  color: var(--secondary);
+  background-color: var(--light-grey);
+  border: 1px solid var(--secondary);
+  transition: border-color var(--delay) var(--function), background-color var(--delay) var(--function),
     color var(--delay) var(--function);
 }
 .button:hover {
   color: #fff;
   background-color: var(--accent);
 }
+.button--bg-light:hover {
+  border-color: var(--accent);
+}
 .button .icon {
   margin-left: 0.2em;
-  width: 1rem;
-  height: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
   stroke: var(--accent);
-  transition: margin var(--delay) var(--function),
-    width var(--delay) var(--function);
+  stroke-width: 2px;
+  transition: margin var(--delay) var(--function), width var(--delay) var(--function);
 }
 .button:hover .icon {
   margin-left: 0;
@@ -112,7 +133,6 @@
 .button-light .icon {
   width: 1.25rem;
   height: 1.25rem;
-  stroke-width: 1.5px;
 }
 .button-light:hover span {
   background-color: var(--accent);
@@ -160,11 +180,10 @@
   transition: color var(--delay) var(--function);
 }
 .header__btn .icon {
-  margin-left: 0.5em;
+  margin: -0.1em 0 0 0.5em;
   width: 1rem;
   height: 1rem;
   stroke: var(--accent);
-  stroke-width: 1.5px;
 }
 .header__contacts {
   height: 100%;
@@ -252,8 +271,7 @@
   border-radius: var(--radius);
   opacity: 0;
   transform: translateX(-50%) translateY(2rem);
-  transition: transform 0.2s var(--function), opacity 0.2s var(--function),
-    visibility 0.2s var(--function);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
   visibility: hidden;
 }
 .user-menu__list ul {
@@ -309,8 +327,7 @@
   border-radius: var(--radius);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   transform: translateY(2rem);
-  transition: transform 0.2s var(--function), opacity 0.2s var(--function),
-    visibility 0.2s var(--function);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
   visibility: hidden;
 }
 .nav-mob.visible {
@@ -385,9 +402,15 @@
 .footer__soc a + a {
   margin-left: 1em;
 }
-.footer__soc img {
-  width: 2.4rem;
-  height: 2.4rem;
+.footer__soc .icon {
+  width: 2.375rem;
+  height: 2.375rem;
+  stroke: var(--accent);
+  fill: transparent;
+  transition: fill var(--delay) var(--function);
+}
+.footer__soc .icon:hover {
+  fill: var(--accent);
 }
 .footer__nav li + li {
   margin-top: 1.2em;
@@ -425,8 +448,7 @@
   position: relative;
   opacity: 0;
   transform: translateY(2rem);
-  transition: transform 0.2s var(--function), opacity 0.2s var(--function),
-    visibility 0.2s var(--function);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
   visibility: hidden;
 }
 .modal.visible .modal__body {
@@ -555,14 +577,15 @@
 .products__item-icon-text span {
   margin-left: 0.4em;
 }
-.products__item-lock,
-.products__item-icons {
+.products__item-acces .icon {
+  margin-right: 0.5em;
+}
+.products__item-acces .icon,
+.products__item-icon-text .icon {
   margin-top: -0.2em;
 }
-.products__item-lock {
-  margin-right: 0.5em;
-  width: 1.25rem;
-  height: 1.25rem;
+.products__item-like .icon {
+  margin-top: -0.6rem;
 }
 .products__item-picture {
   flex: 1;
@@ -599,6 +622,14 @@
   align-items: center;
   border: 1px solid var(--secondary);
   border-radius: 1.7em;
+}
+.products__item-counter .icon {
+  fill: var(--secondary);
+  stroke-width: 0;
+  transition: fill var(--delay) var(--function);
+}
+.products__item-counter .icon:hover {
+  fill: var(--accent);
 }
 
 /* LABORATORY */
@@ -778,3 +809,62 @@
 .company__img img:nth-child(2) {
   display: none;
 }
+
+/* CATALOG FIRST SCREEN */
+
+.catalog-f-screen__title {
+  margin-bottom: 1em;
+}
+
+/* TABS */
+
+.tabs__row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.3rem;
+  column-gap: 0.3rem;
+}
+.tabs__row + .tabs__row {
+  margin-top: 1.25em;
+}
+.tabs .button {
+  width: initial;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+/* CATALOG */
+
+.catalog-product__list {
+  display: flex;
+  row-gap: 3rem;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+}
+.catalog-product__list .products__item {
+  flex: 1 0 30%;
+}
+.catalog-product__more {
+  margin-top: 2.5em;
+}
+.catalog-product__more .button {
+  margin: 0 auto;
+  max-width: 15rem;
+}
+
+/* CATALOG INFO */
+
+.catalog-info {
+  margin-top: 4em;
+}
+.catalog-info__text {
+  margin: 3em 0 1.25em;
+}
+.catalog-info__img {
+  text-align: right;
+}
+
+/* CATALOG CERTIFICATE */
+.catalog-cert .section-header-subtitle {
+  margin-top: 2em;
+}  
