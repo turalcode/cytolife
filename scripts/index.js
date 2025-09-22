@@ -1,3 +1,5 @@
+"use strict";
+
 // SWIPER SLIDER
 
 const swiperProducts = new Swiper(".swiper-products", {
@@ -27,9 +29,11 @@ const swiperCertificate = new Swiper(".swiper-certificate", {
       slidesPerView: 2.5,
     },
     767: {
+      spaceBetween: 20,
       slidesPerView: 3.5,
     },
     991: {
+      spaceBetween: 20,
       slidesPerView: 4.5,
     },
   },
