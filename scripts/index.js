@@ -1,10 +1,13 @@
 // SWIPER SLIDER
 
 const swiperProducts = new Swiper(".swiper-products", {
-  spaceBetween: 20,
-  // loop: true,
+  slidesPerView: 1.1,
+  spaceBetween: 10,
 
   breakpoints: {
+    567: {
+      spaceBetween: 20,
+    },
     767: {
       slidesPerView: 2,
     },
@@ -15,19 +18,26 @@ const swiperProducts = new Swiper(".swiper-products", {
 });
 
 const swiperCertificate = new Swiper(".swiper-certificate", {
-  spaceBetween: 20,
-  // loop: true,
+  slidesPerView: 2.5,
+  spaceBetween: 10,
+
   breakpoints: {
     567: {
-      slidesPerView: 2,
+      spaceBetween: 20,
+      slidesPerView: 2.5,
     },
     767: {
-      slidesPerView: 3,
+      slidesPerView: 3.5,
     },
     991: {
-      slidesPerView: 5,
+      slidesPerView: 4.5,
     },
   },
+});
+
+const swiperTabs = new Swiper(".swiper-tabs", {
+  slidesPerView: "auto",
+  spaceBetween: 5,
 });
 
 // BURGER AND USER MENU
@@ -37,27 +47,35 @@ document.getElementById("burger-btn").addEventListener("click", function (e) {
   document.getElementById("nav-mob").classList.toggle("visible");
 });
 
-document.getElementById("user-menu-btn").addEventListener("click", function (e) {
-  e.preventDefault();
-  document.getElementById("nav-mob").classList.remove("visible");
-  document.getElementById("user-menu-list-mob").classList.toggle("visible");
-});
+document
+  .getElementById("user-menu-btn")
+  .addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("nav-mob").classList.remove("visible");
+    document.getElementById("user-menu-list-mob").classList.toggle("visible");
+  });
 
 // CERTIFICATE
 
 if (document.getElementById("certificate")) {
-  document.getElementById("certificate").addEventListener("click", function (e) {
-    if (e.target.classList.contains("certificate-img-js")) {
-      document.getElementById("modal-certificate-img").src = e.target.dataset.src;
-      document.getElementById("modal").classList.add("visible");
-      document.body.classList.add("overflow-hidden");
-    }
-  });
+  document
+    .getElementById("certificate")
+    .addEventListener("click", function (e) {
+      if (e.target.classList.contains("certificate-img-js")) {
+        document.getElementById("modal-certificate-img").src =
+          e.target.dataset.src;
+        document.getElementById("modal").classList.add("visible");
+        document.body.classList.add("overflow-hidden");
+      }
+    });
 }
 // MODAL
 
 document.getElementById("modal").addEventListener("click", function (e) {
-  if (e.target.classList.contains("modal-close-js") || e.target.classList.contains("modal-bg-js")) {
+  if (
+    e.target.classList.contains("modal-close-js") ||
+    e.target.classList.contains("modal-bg-js")
+  ) {
     this.classList.remove("visible");
     document.body.classList.remove("overflow-hidden");
   }
