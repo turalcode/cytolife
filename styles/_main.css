@@ -94,7 +94,8 @@
   letter-spacing: 1px;
   background-color: var(--secondary);
   border-radius: calc(3em);
-  transition: background-color var(--delay) var(--function), color var(--delay) var(--function);
+  transition: background-color var(--delay) var(--function),
+    color var(--delay) var(--function);
 }
 .button.disabled {
   color: #c4c4c4;
@@ -104,7 +105,8 @@
   color: var(--secondary);
   background-color: var(--light-grey);
   border: 1px solid var(--secondary);
-  transition: border-color var(--delay) var(--function), background-color var(--delay) var(--function),
+  transition: border-color var(--delay) var(--function),
+    background-color var(--delay) var(--function),
     color var(--delay) var(--function);
 }
 .button:hover {
@@ -120,7 +122,8 @@
   height: 0.75rem;
   stroke: var(--accent);
   stroke-width: 2px;
-  transition: margin var(--delay) var(--function), width var(--delay) var(--function);
+  transition: margin var(--delay) var(--function),
+    width var(--delay) var(--function);
 }
 .button.disabled .icon {
   stroke: #c4c4c4;
@@ -133,7 +136,7 @@
 /* BUTTON LIGHT  */
 
 .button-light {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   text-transform: uppercase;
   text-align: center;
@@ -293,7 +296,8 @@
   border-radius: var(--radius);
   opacity: 0;
   transform: translateX(-50%) translateY(2rem);
-  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function),
+    visibility 0.2s var(--function);
   visibility: hidden;
 }
 .user-menu__list ul {
@@ -349,7 +353,8 @@
   border-radius: var(--radius);
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
   transform: translateY(2rem);
-  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function),
+    visibility 0.2s var(--function);
   visibility: hidden;
 }
 .nav-mob.visible {
@@ -452,6 +457,8 @@
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
   visibility: hidden;
 }
@@ -470,7 +477,8 @@
   position: relative;
   opacity: 0;
   transform: translateY(2rem);
-  transition: transform 0.2s var(--function), opacity 0.2s var(--function), visibility 0.2s var(--function);
+  transition: transform 0.2s var(--function), opacity 0.2s var(--function),
+    visibility 0.2s var(--function);
   visibility: hidden;
 }
 .modal.visible .modal__body {
@@ -821,7 +829,7 @@
 /* COMPANY */
 
 .company {
-  padding-bottom: 17em;
+  padding-bottom: 10em;
 }
 .company__logo {
   padding: 3.5em 3em 0 0;
@@ -1036,7 +1044,8 @@
 }
 .product__like .icon {
   fill: transparent;
-  transition: stroke var(--delay) var(--function), fill var(--delay) var(--function);
+  transition: stroke var(--delay) var(--function),
+    fill var(--delay) var(--function);
 }
 .product__like:hover .icon {
   stroke: var(--accent);
@@ -1066,6 +1075,10 @@
 
 /* PRODUCT DESCRIPTION */
 
+.product-descr__img img {
+  width: 100%;
+  padding-right: 4em;
+}
 .product-descr__title {
   margin-bottom: 0;
   padding: 1.5em 0.625em;
@@ -1080,6 +1093,17 @@
   padding: 1.4em 0;
   font-size: 0.875rem;
 }
+.product-descr__content ul {
+  padding-left: 2em;
+  list-style: initial;
+}
+.product-descr__content .swiper-certificate {
+  margin-top: 2em;
+}
+.product-descr__content .certificate__item {
+  padding: 0;
+  border: none;
+}
 
 /* ACCORDION */
 
@@ -1088,11 +1112,11 @@
 }
 .accordion-trigger-action {
   position: relative;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.25rem;
+  height: 1.25rem;
   position: absolute;
   top: 50%;
-  right: 0.625em;
+  right: 2.5rem;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -1118,4 +1142,18 @@
   height: 0;
   overflow: hidden;
   transition: height 0.8s var(--function);
+}
+
+/* PRODUCT PROTOCOL */
+
+.product-protocol__title {
+  margin-bottom: 1.5em;
+  text-transform: uppercase;
+}
+.product-protocol__subtitle {
+  font-size: 0.875rem;
+}
+.product-protocol .products {
+  margin-top: 3em;
+  padding-bottom: 2.5em;
 }
