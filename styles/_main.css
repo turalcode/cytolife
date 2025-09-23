@@ -1063,3 +1063,59 @@
 .product__share-link:hover .icon-share {
   fill: var(--accent);
 }
+
+/* PRODUCT DESCRIPTION */
+
+.product-descr__title {
+  margin-bottom: 0;
+  padding: 1.5em 0.625em;
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #cac9cf;
+}
+.product-descr__acc {
+  border-top: 1px solid #cac9cf;
+}
+.product-descr__content {
+  padding: 1.4em 0;
+  font-size: 0.875rem;
+}
+
+/* ACCORDION */
+
+.accordion-trigger {
+  position: relative;
+}
+.accordion-trigger-action {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 50%;
+  right: 0.625em;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.accordion-trigger-action::before,
+.accordion-trigger-action::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--secondary);
+  transform: translate(-50%, -50%);
+  transition: width 0.8s var(--function);
+}
+.accordion-trigger-action::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.accordion-trigger.active .accordion-trigger-action::after {
+  width: 0;
+}
+.accordion-panel {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.8s var(--function);
+}
