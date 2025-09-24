@@ -506,13 +506,21 @@
 
       <section class="product section">
         <div class="container">
+          <h1 class="product__title product__title-mob">Skinopro active</h1>
+
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-5">
               <div class="product__img">
                 <img src="./public/images/single-product.png" alt="#" />
+
+                <a href="#" class="product__like product__like-mob">
+                  <svg class="icon">
+                    <use href="#icon-heart"></use>
+                  </svg>
+                </a>
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-md-7">
               <div class="product__content">
                 <h1 class="product__title">Skinopro active</h1>
 
@@ -579,32 +587,32 @@
                   </a>
                 </div>
 
-                <!-- <div class="products__item-footer disabled">
-                <div class="products__item-counter disabled">
-                  <a href="#" class="products__item-minus">
+                <!-- <div class="products__item-footer">
+                  <div class="products__item-counter disabled">
+                    <a href="#" class="products__item-minus">
+                      <svg class="icon">
+                        <use href="#icon-minus"></use>
+                      </svg>
+                    </a>
+                    <div class="products__item-quantity">12</div>
+                    <a href="#" class="products__item-plus">
+                      <svg class="icon">
+                        <use href="#icon-plus"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <a href="#" class="button h-100 disabled"
+                    >В корзину
                     <svg class="icon">
-                      <use href="#icon-minus"></use>
+                      <use href="#icon-arrow"></use>
                     </svg>
                   </a>
-                  <div class="products__item-quantity">12</div>
-                  <a href="#" class="products__item-plus">
+                  <a href="#" class="product__like disabled">
                     <svg class="icon">
-                      <use href="#icon-plus"></use>
+                      <use href="#icon-heart"></use>
                     </svg>
                   </a>
-                </div>
-                <a href="#" class="button h-100 disabled"
-                  >В корзину
-                  <svg class="icon">
-                    <use href="#icon-arrow"></use>
-                  </svg>
-                </a>
-                <a href="#" class="product__like disabled">
-                  <svg class="icon">
-                    <use href="#icon-heart"></use>
-                  </svg>
-                </a>
-              </div> -->
+                </div> -->
 
                 <div class="product__share">
                   <div class="product__share-title">Поделиться:</div>
@@ -646,12 +654,12 @@
       <section class="product-descr section">
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <div class="col-md-4">
               <div class="product-descr__img">
                 <img src="./public/images/single-product-2.png" alt="#" />
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-md-8">
               <div class="product-descr__acc">
                 <div class="accordion">
                   <div class="accordion-item">
@@ -784,11 +792,11 @@
                   </div>
 
                   <div class="accordion-item">
-                    <div class="accordion-trigger active">
+                    <div class="accordion-trigger">
                       <h3 class="product-descr__title">Сертификаты</h3>
                       <div class="accordion-trigger-action"></div>
                     </div>
-                    <div class="accordion-panel active">
+                    <div class="accordion-panel">
                       <div class="accordion-hidden">
                         <div class="product-descr__content">
                           <div class="swiper swiper-certificate">
@@ -1138,6 +1146,7 @@
       </div>
     </div>
     <!-- /modal -->
+
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -1210,10 +1219,9 @@
           Copyright  © 2019 - 2025 | ООО «Медтендергруп»
         </div>
       </div>
-
-      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-      <script src="./scripts/accordion.js"></script>
-      <script src="./scripts/index.js"></script>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

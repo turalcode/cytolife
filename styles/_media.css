@@ -101,6 +101,9 @@
   .category-adv__img-mob {
     display: block;
   }
+  .product__content {
+    padding-right: 0;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -198,6 +201,25 @@
   }
   .category-adv .section-header-title {
     margin-top: 0;
+  }
+  .product__title {
+    display: none;
+  }
+  .product__title-mob {
+    display: block;
+  }
+  .product__like {
+    display: none;
+  }
+  .product__like-mob {
+    display: inline-block;
+  }
+  .product-descr__img {
+    text-align: center;
+  }
+  .product-descr__img img {
+    padding-right: 0;
+    max-width: 20rem;
   }
 }
 
@@ -331,6 +353,17 @@
   }
   .products__item-price {
     font-size: 0.875rem;
+  }
+  .product__available {
+    margin: 1em 0 0;
+    display: block;
+  }
+}
+
+/* s <= Very small (s) */
+@media (max-width: 340px) {
+  .products__item {
+    padding: 0.5em;
   }
 }
 

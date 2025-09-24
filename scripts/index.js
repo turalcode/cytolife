@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const swiperCertificate = new Swiper(".swiper-certificate", {
-    slidesPerView: 2.5,
+    slidesPerView: 2.2,
     spaceBetween: 10,
 
     breakpoints: {
@@ -81,7 +81,11 @@ document.addEventListener("DOMContentLoaded", () => {
       e.target.classList.contains("modal-bg-js")
     ) {
       this.classList.remove("visible");
-      document.body.classList.remove("overflow-hidden");
+
+      setTimeout(() => {
+        document.body.style.paddingRight = "0px";
+        document.body.style.overflow = "initial";
+      }, 200);
     }
   });
 
@@ -120,6 +124,9 @@ document.addEventListener("DOMContentLoaded", () => {
   function openModal(e) {
     document.getElementById("modal-certificate-img").src = e.target.dataset.src;
     document.getElementById("modal").classList.add("visible");
-    document.body.classList.add("overflow-hidden");
+    document.body.style.paddingRight = `${
+      window.innerWidth - document.documentElement.clientWidth
+    }px`;
+    document.body.style.overflow = "hidden";
   }
 });
