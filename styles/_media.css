@@ -358,6 +358,18 @@
     margin: 1em 0 0;
     display: block;
   }
+  .company-f-screen {
+    display: none;
+  }
+  .company-f-screen-mob {
+    display: block;
+  }
+  .company-f-screen-mob .company-f-screen__title {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
 }
 
 /* s <= Very small (s) */
