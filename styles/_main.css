@@ -1306,7 +1306,7 @@
 /* TODAY */
 
 .today__content {
-  margin-top: 3em;
+  margin-top: 2.5em;
   padding-right: 12em;
 }
 .today__list {
@@ -1328,7 +1328,7 @@
 /* SYSTEM */
 
 .system .section-header {
-  margin-bottom: 2em
+  margin-bottom: 2em;
 }
 .system__presentation {
   display: flex;
@@ -1375,4 +1375,54 @@
 }
 .system__item-img img {
   border-radius: 50%;
+}
+
+/* TARGET */
+
+.target .section-header {
+  margin-bottom: 0;
+}
+.target__content {
+  margin-top: 2.5em;
+  padding-right: 10.5em;
+}
+.target__content div + div {
+  margin-top: 2em;
+}
+
+/* PRODUCTION */
+
+.production .section-header {
+  margin-bottom: 0;
+}
+.production__img {
+  margin-top: 2em;
+}
+.production__img img {
+  width: 100%;
+  max-width: 19rem;
+}
+.production__content {
+  margin-top: 2.5em;
+  padding-right: 11em;
+}
+.production__content > * + * {
+  margin-top: 1em;
+}
+.production__list {
+  padding-left: 2em;
+  list-style: initial;
+}
+
+/* COOPERATION */
+
+.cooperation__content {
+  margin-top: 2.5em;
+  padding-right: 11em;
+}
+.cooperation__list {
+  margin-top: 2em;
+}
+.cooperation__list li + li {
+  margin-top: 0.8em;
 }
