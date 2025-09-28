@@ -563,9 +563,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  row-gap: 1rem;
-  column-gap: 1rem;
+  gap: 1rem;
   flex-wrap: wrap;
+}
+.first-screen__partners-list img {
+  height: 3.125em;
 }
 .partners-img-mob {
   display: none;
@@ -1440,7 +1442,7 @@
 /* COOPERATION */
 
 .cooperation .section-header {
-  margin-bottom: 0;
+  margin-bottom: 4em;
 }
 .cooperation__content {
   margin-top: 2.5em;
@@ -1453,8 +1455,117 @@
   margin-top: 0.8em;
 }
 
+/* COMPANY PARTNERS */
+
+.company-partners .first-screen__partners-list {
+  padding: 0 2em;
+}
+
 /* BANNER LOGO */
 
+.banner-logo {
+  margin-top: 7em;
+}
 .banner-logo img {
+  width: 100%;
+}
+
+/* CONTACTS */
+
+.contacts-f-screen__switch {
+  margin-top: 3em;
+  display: flex;
+  column-gap: 0.3rem;
+}
+.contacts-f-screen__switch-action {
+  padding: 1.5em 1em;
+  position: relative;
+  flex: 1;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid var(--secondary);
+  background: none;
+  font-size: 0.875rem;
+  color: inherit;
+  line-height: 0.875rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  transition: color 0.8s var(--function);
+}
+.contacts-f-screen__switch-action.active {
+  color: var(--accent);
+}
+.contacts-f-screen__switch-action:first-child::before,
+.contacts-f-screen__switch-action:last-child::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--secondary);
+  border-radius: 2rem;
+
+  transform: translateX(100%);
+  transition: transform 0.8s var(--function);
+}
+.contacts-f-screen__switch-action:last-child:before {
+  transform: translateX(-100%);
+}
+.contacts-f-screen__switch-action.active::before {
+  transform: translateX(0);
+}
+
+/* CONTACTS CONTENT */
+
+.contacts-content {
+  margin-top: 2em;
+  position: relative;
+}
+.contacts-content__body {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: visibility 0.4s var(--function), opacity 0.4s var(--function),
+    transform 0.4s var(--function) 0.4s;
+}
+.contacts-content__body.active {
+  position: initial;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: visibility 0.4s var(--function) 0.4s,
+    opacity 0.4s var(--function) 0.4s, transform 0.4s var(--function) 0.4s;
+}
+
+/* OFFICE */
+
+.office__info a {
+  padding: 0.5em 0;
+}
+.office__info-mail {
+  margin-top: 1em;
+}
+.office__info address {
+  margin-top: 1.5em;
+}
+.office__map {
+  padding-right: 2.5em;
+  height: 100%;
+  overflow: hidden;
+}
+.office__map iframe {
+  border-radius: var(--radius);
+}
+.office__img {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+.office__img img {
   width: 100%;
 }

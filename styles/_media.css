@@ -126,6 +126,9 @@
   .today__employees {
     margin-top: 4em;
   }
+  .banner-logo {
+    margin-top: 5em;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -357,8 +360,7 @@
     display: block;
   }
   .first-screen__partners-list {
-    row-gap: 0;
-    column-gap: 1.3rem;
+    column-gap: 2rem;
   }
   .partners-img-desktop {
     display: none;
@@ -479,8 +481,18 @@
   .system__item-img {
     width: 16.25em;
   }
+  .company-partners .first-screen__partners-list {
+    padding: 0;
+    column-gap: 3rem;
+  }
+  .cooperation .section-header {
+    margin-bottom: 3em;
+  }
   .banner-logo .container {
     padding: 0;
+  }
+  .banner-logo {
+    margin-top: 3em;
   }
 }
 

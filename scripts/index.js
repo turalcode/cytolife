@@ -121,6 +121,32 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+  // SWITCH
+
+  if (document.querySelector(".switch-js")) {
+    document
+      .querySelector(".switch-js")
+      .addEventListener("click", function (e) {
+        if (e.target.classList.contains("switch-action-js")) {
+          document
+            .querySelectorAll(".switch-action-js")
+            .forEach(function (btn) {
+              btn.classList.remove("active");
+            });
+          e.target.classList.add("active");
+
+          document
+            .querySelectorAll(".switch-content-js")
+            .forEach(function (content) {
+              content.classList.remove("active");
+            });
+          document
+            .querySelector(`.${e.target.dataset.switchContent}`)
+            .classList.add("active");
+        }
+      });
+  }
+
   function openModal(e) {
     document.getElementById("modal-certificate-img").src = e.target.dataset.src;
     document.getElementById("modal").classList.add("visible");
