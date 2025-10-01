@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -12,6 +22,7 @@ body {
   margin: 0;
   -webkit-text-size-adjust: 100%;
   scrollbar-gutter: stable;
+  text-rendering: optimizeSpeed;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -75,12 +86,14 @@ small {
 
 input:user-invalid,
 textarea:user-invalid {
-  border-color: red;
+  border-color: tomato;
 }
-
 input:user-valid,
 textarea:user-valid {
   border-color: green;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
 
 textarea {
