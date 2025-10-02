@@ -147,6 +147,22 @@ document.addEventListener("DOMContentLoaded", () => {
       });
   }
 
+  // FILTER
+
+  if (document.querySelector(".filter-distributors")) {
+    document
+      .querySelector(".filter-distributors")
+      .addEventListener("click", function (e) {
+        if (e.target.classList.contains("filter-dropdown-action")) {
+          console.log(this);
+
+          // this.querySelector(".filter-dropdown-list-wrapper").classList.add(
+          //   "active"
+          // );
+        }
+      });
+  }
+
   function openModal(e) {
     document.getElementById("modal-certificate-img").src = e.target.dataset.src;
     document.getElementById("modal").classList.add("visible");

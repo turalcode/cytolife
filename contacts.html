@@ -163,6 +163,12 @@
       <symbol id="icon-arrow-dropdown" viewBox="0 0 20 20">
         <path d="M15.5 7.03847L10 12.9615L4.5 7.03847" />
       </symbol>
+
+      <symbol id="icon-arrow-airplane" viewBox="0 0 20 20">
+        <path
+          d="M7.65517 12.3448L10.8793 18.5L18.5 1.5L1.5 9.7069L7.65517 12.3448Z"
+        />
+      </symbol>
     </svg>
 
     <header class="header">
@@ -905,7 +911,7 @@
                 <img src="./public/images/distributors.jpg" alt="#" />
               </div>
 
-              <div class="distributors__filter filter">
+              <div class="distributors__filter filter filter-distributors">
                 <div class="filter-dropdown">
                   <button class="filter-dropdown-action">
                     Регион
@@ -914,12 +920,344 @@
                     </svg>
                   </button>
 
-                  <ul class="filter-dropdown-list">
-                    <li date-region="all">Все регионы</li>
-                    <li date-region="region-1">Регион-1</li>
-                    <li date-region="region-2">Регион-2</li>
-                    <li date-region="region-3">Регион-3</li>
-                  </ul>
+                  <div class="filter-dropdown-list-wrapper">
+                    <div class="filter-dropdown-scroll">
+                      <div class="filter-search-wrapper">
+                        <input
+                          class="filter-search"
+                          type="text"
+                          placeholder="Найти город"
+                        />
+                        <svg class="icon">
+                          <use href="#icon-arrow-airplane"></use>
+                        </svg>
+                      </div>
+
+                      <ul class="filter-dropdown-list">
+                        <li
+                          class="filter-dropdown-list-item active"
+                          date-region="region-1"
+                        >
+                          Южный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-2"
+                        >
+                          Центральный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-3"
+                        >
+                          Уральский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-4"
+                        >
+                          Приволжский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-5"
+                        >
+                          Сибирский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-6"
+                        >
+                          Дальневосточный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-7"
+                        >
+                          Северо-западный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-8"
+                        >
+                          Избранное
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-9"
+                        >
+                          Избранное-2
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-10"
+                        >
+                          Избранное-3
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-dropdown">
+                  <button class="filter-dropdown-action">
+                    Область
+                    <svg class="icon">
+                      <use href="#icon-arrow-dropdown"></use>
+                    </svg>
+                  </button>
+
+                  <div class="filter-dropdown-list-wrapper">
+                    <div class="filter-dropdown-scroll">
+                      <div class="filter-search-wrapper">
+                        <input
+                          class="filter-search"
+                          type="text"
+                          placeholder="Найти город"
+                        />
+                        <svg class="icon">
+                          <use href="#icon-arrow-airplane"></use>
+                        </svg>
+                      </div>
+
+                      <ul class="filter-dropdown-list">
+                        <li
+                          class="filter-dropdown-list-item active"
+                          date-region="region-1"
+                        >
+                          Южный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-2"
+                        >
+                          Центральный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-3"
+                        >
+                          Уральский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-4"
+                        >
+                          Приволжский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-5"
+                        >
+                          Сибирский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-6"
+                        >
+                          Дальневосточный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-7"
+                        >
+                          Северо-западный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-8"
+                        >
+                          Избранное
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-9"
+                        >
+                          Избранное-2
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-10"
+                        >
+                          Избранное-3
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-dropdown">
+                  <button class="filter-dropdown-action">
+                    Город
+                    <svg class="icon">
+                      <use href="#icon-arrow-dropdown"></use>
+                    </svg>
+                  </button>
+
+                  <div class="filter-dropdown-list-wrapper">
+                    <div class="filter-dropdown-scroll">
+                      <div class="filter-search-wrapper">
+                        <input
+                          class="filter-search"
+                          type="text"
+                          placeholder="Найти город"
+                        />
+                        <svg class="icon">
+                          <use href="#icon-arrow-airplane"></use>
+                        </svg>
+                      </div>
+
+                      <ul class="filter-dropdown-list">
+                        <li
+                          class="filter-dropdown-list-item active"
+                          date-region="region-1"
+                        >
+                          Южный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-2"
+                        >
+                          Центральный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-3"
+                        >
+                          Уральский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-4"
+                        >
+                          Приволжский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-5"
+                        >
+                          Сибирский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-6"
+                        >
+                          Дальневосточный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-7"
+                        >
+                          Северо-западный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-8"
+                        >
+                          Избранное
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-9"
+                        >
+                          Избранное-2
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-10"
+                        >
+                          Избранное-3
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="filter-dropdown">
+                  <button class="filter-dropdown-action">
+                    Наименование
+                    <svg class="icon">
+                      <use href="#icon-arrow-dropdown"></use>
+                    </svg>
+                  </button>
+
+                  <div class="filter-dropdown-list-wrapper">
+                    <div class="filter-dropdown-scroll">
+                      <div class="filter-search-wrapper">
+                        <input
+                          class="filter-search"
+                          type="text"
+                          placeholder="Найти город"
+                        />
+                        <svg class="icon">
+                          <use href="#icon-arrow-airplane"></use>
+                        </svg>
+                      </div>
+
+                      <ul class="filter-dropdown-list">
+                        <li
+                          class="filter-dropdown-list-item active"
+                          date-region="region-1"
+                        >
+                          Южный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-2"
+                        >
+                          Центральный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-3"
+                        >
+                          Уральский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-4"
+                        >
+                          Приволжский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-5"
+                        >
+                          Сибирский
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-6"
+                        >
+                          Дальневосточный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-7"
+                        >
+                          Северо-западный
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-8"
+                        >
+                          Избранное
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-9"
+                        >
+                          Избранное-2
+                        </li>
+                        <li
+                          class="filter-dropdown-list-item"
+                          date-region="region-10"
+                        >
+                          Избранное-3
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
