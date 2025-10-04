@@ -801,127 +801,416 @@
               </div>
 
               <div class="distributors__filter filter filter-distributors">
-                <div class="filter-dropdown">
-                  <button class="filter-dropdown-action">
-                    <span class="filter-dropdown-action-text region-action-text">Регион</span>
-                    <svg class="icon">
-                      <use href="#icon-arrow-dropdown"></use>
-                    </svg>
-                  </button>
+                <div class="filter-dropdown-section">
+                  <div class="filter-dropdown">
+                    <button class="filter-dropdown-action">
+                      <span class="filter-dropdown-action-text region-action-text">Регион</span>
+                      <svg class="icon">
+                        <use href="#icon-arrow-dropdown"></use>
+                      </svg>
+                    </button>
 
-                  <div class="filter-dropdown-list-wrapper">
-                    <div class="filter-dropdown-scroll reset-scroll">
-                      <ul class="filter-dropdown-list">
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-1">Южный</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-2">Центральный</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-3">Уральский</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-4">Приволжский</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-5">Сибирский</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-6">Дальневосточный</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-7">Северо-западный</li>
-                        <li class="filter-dropdown-list-item" data-action-class="region-action-text" data-region="region-8">Избранное</li>
-                      </ul>
+                    <div class="filter-dropdown-list-wrapper">
+                      <div class="filter-dropdown-scroll reset-scroll">
+                        <ul class="filter-dropdown-list">
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-1"
+                            data-category="region"
+                          >
+                            Южный
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-2"
+                            data-category="region"
+                          >
+                            Центральный
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-3"
+                            data-category="region"
+                          >
+                            Уральский
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-4"
+                            data-category="region"
+                          >
+                            Приволжский
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-5"
+                            data-category="region"
+                          >
+                            Сибирский
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-6"
+                            data-category="region"
+                          >
+                            Дальневосточный
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-7"
+                            data-category="region"
+                          >
+                            Северо-западный
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="region-action-text"
+                            data-filter-class="region-8"
+                            data-category="region"
+                          >
+                            Избранное
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-dropdown">
+                    <button class="filter-dropdown-action">
+                      <span class="filter-dropdown-action-text area-action-text">Область</span>
+                      <svg class="icon">
+                        <use href="#icon-arrow-dropdown"></use>
+                      </svg>
+                    </button>
+
+                    <div class="filter-dropdown-list-wrapper">
+                      <div class="filter-dropdown-scroll">
+                        <div class="filter-search-wrapper">
+                          <input
+                            class="filter-search"
+                            data-search="area-search"
+                            type="text"
+                            placeholder="Найти область"
+                          />
+                          <svg class="icon">
+                            <use href="#icon-arrow-airplane"></use>
+                          </svg>
+                        </div>
+
+                        <ul class="filter-dropdown-list area-search">
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-1"
+                            data-category="area"
+                          >
+                            Московская область
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-2"
+                            data-category="area"
+                          >
+                            Область-2
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-3"
+                            data-category="area"
+                          >
+                            Область-3
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-4"
+                            data-category="area"
+                          >
+                            Область-4
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-5"
+                            data-category="area"
+                          >
+                            Область-5
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-6"
+                            data-category="area"
+                          >
+                            Область-6
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-7"
+                            data-category="area"
+                          >
+                            Область-7
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-8"
+                            data-category="area"
+                          >
+                            Область-8
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-9"
+                            data-category="area"
+                          >
+                            Область-9
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="area-action-text"
+                            data-filter-class="area-10"
+                            data-category="area"
+                          >
+                            Область-10
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-dropdown">
+                    <button class="filter-dropdown-action">
+                      <span class="filter-dropdown-action-text city-action-text">Город</span>
+
+                      <svg class="icon">
+                        <use href="#icon-arrow-dropdown"></use>
+                      </svg>
+                    </button>
+
+                    <div class="filter-dropdown-list-wrapper">
+                      <div class="filter-dropdown-scroll">
+                        <div class="filter-search-wrapper">
+                          <input
+                            class="filter-search"
+                            data-search="city-search"
+                            type="text"
+                            placeholder="Найти город"
+                          />
+                          <svg class="icon">
+                            <use href="#icon-arrow-airplane"></use>
+                          </svg>
+                        </div>
+
+                        <ul class="filter-dropdown-list city-search">
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-1"
+                            data-category="city"
+                          >
+                            Город-1
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-2"
+                            data-category="city"
+                          >
+                            Город-2
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-3"
+                            data-category="city"
+                          >
+                            Город-3
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-4"
+                            data-category="city"
+                          >
+                            Город-4
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-5"
+                            data-category="city"
+                          >
+                            Город-5
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-6"
+                            data-category="city"
+                          >
+                            Город-6
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-7"
+                            data-category="city"
+                          >
+                            Город-7
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-8"
+                            data-category="city"
+                          >
+                            Город-8
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-9"
+                            data-category="city"
+                          >
+                            Город-9
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="city-action-text"
+                            data-filter-class="city-10"
+                            data-category="city"
+                          >
+                            Город-10
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="filter-dropdown">
+                    <button class="filter-dropdown-action">
+                      <span class="filter-dropdown-action-text distributor-action-text">Наименование</span>
+
+                      <svg class="icon">
+                        <use href="#icon-arrow-dropdown"></use>
+                      </svg>
+                    </button>
+
+                    <div class="filter-dropdown-list-wrapper">
+                      <div class="filter-dropdown-scroll">
+                        <div class="filter-search-wrapper">
+                          <input
+                            class="filter-search"
+                            data-search="distributor-search"
+                            type="text"
+                            placeholder="Найти дистрибьютора"
+                          />
+                          <svg class="icon">
+                            <use href="#icon-arrow-airplane"></use>
+                          </svg>
+                        </div>
+
+                        <ul class="filter-dropdown-list distributor-search">
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-1"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-1
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-2"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-2
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-3"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-3
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-4"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-4
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-5"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-5
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-6"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-6
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-7"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-7
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-8"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-8
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-9"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-9
+                          </li>
+                          <li
+                            class="filter-dropdown-list-item"
+                            data-action-class="distributor-action-text"
+                            data-filter-class="distributor-10"
+                            data-category="distributor"
+                          >
+                            Дистрибьютор-10
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div class="filter-dropdown">
-                  <button class="filter-dropdown-action">
-                    <span class="filter-dropdown-action-text area-action-text">Область</span>
-                    <svg class="icon">
-                      <use href="#icon-arrow-dropdown"></use>
-                    </svg>
-                  </button>
+                <div class="filter-result">
 
-                  <div class="filter-dropdown-list-wrapper">
-                    <div class="filter-dropdown-scroll">
-                      <div class="filter-search-wrapper">
-                        <input class="filter-search" data-search="area-search" type="text" placeholder="Найти область" />
-                        <svg class="icon">
-                          <use href="#icon-arrow-airplane"></use>
-                        </svg>
-                      </div>
-
-                      <ul class="filter-dropdown-list area-search">
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-1">Московская область</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-2">Область-2</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-3">Область-3</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-4">Область-4</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-5">Область-5</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-6">Область-6</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-7">Область-7</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-8">Область-8</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-9">Область-9</li>
-                        <li class="filter-dropdown-list-item" data-action-class="area-action-text" data-area="area-10">Область-10</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="filter-dropdown">
-                  <button class="filter-dropdown-action">
-                    Город
-                    <svg class="icon">
-                      <use href="#icon-arrow-dropdown"></use>
-                    </svg>
-                  </button>
-
-                  <div class="filter-dropdown-list-wrapper">
-                    <div class="filter-dropdown-scroll">
-                      <div class="filter-search-wrapper">
-                        <input class="filter-search" type="text" placeholder="Найти город" />
-                        <svg class="icon">
-                          <use href="#icon-arrow-airplane"></use>
-                        </svg>
-                      </div>
-
-                      <ul class="filter-dropdown-list">
-                        <li class="filter-dropdown-list-item" data-city="city-1">Город-1</li>
-                        <li class="filter-dropdown-list-item" data-city="city-2">Город-2</li>
-                        <li class="filter-dropdown-list-item" data-city="city-3">Город-3</li>
-                        <li class="filter-dropdown-list-item" data-city="city-4">Город-4</li>
-                        <li class="filter-dropdown-list-item" data-city="city-5">Город-5</li>
-                        <li class="filter-dropdown-list-item" data-city="city-6">Город-6</li>
-                        <li class="filter-dropdown-list-item" data-city="city-7">Город-7</li>
-                        <li class="filter-dropdown-list-item" data-city="city-8">Город-8</li>
-                        <li class="filter-dropdown-list-item" data-city="city-9">Город-9</li>
-                        <li class="filter-dropdown-list-item" data-region="city-10">Город-10</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="filter-dropdown">
-                  <button class="filter-dropdown-action">
-                    Наименование
-                    <svg class="icon">
-                      <use href="#icon-arrow-dropdown"></use>
-                    </svg>
-                  </button>
-
-                  <div class="filter-dropdown-list-wrapper">
-                    <div class="filter-dropdown-scroll">
-                      <div class="filter-search-wrapper">
-                        <input class="filter-search" type="text" placeholder="Найти дистрибьютора" />
-                        <svg class="icon">
-                          <use href="#icon-arrow-airplane"></use>
-                        </svg>
-                      </div>
-
-                      <ul class="filter-dropdown-list">
-                        <li class="filter-dropdown-list-item" data-name="name-1">Дистрибьютор-1</li>
-                        <li class="filter-dropdown-list-item" data-name="name-2">Дистрибьютор-2</li>
-                        <li class="filter-dropdown-list-item" data-name="name-3">Дистрибьютор-3</li>
-                        <li class="filter-dropdown-list-item" data-name="name-4">Дистрибьютор-4</li>
-                        <li class="filter-dropdown-list-item" data-name="name-5">Дистрибьютор-5</li>
-                        <li class="filter-dropdown-list-item" data-name="name-6">Дистрибьютор-6</li>
-                        <li class="filter-dropdown-list-item" data-name="name-7">Дистрибьютор-7</li>
-                        <li class="filter-dropdown-list-item" data-name="name-8">Дистрибьютор-8</li>
-                        <li class="filter-dropdown-list-item" data-name="name-9">Дистрибьютор-9</li>
-                        <li class="filter-dropdown-list-item" data-name="name-10">Дистрибьютор-10</li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

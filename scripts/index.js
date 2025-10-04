@@ -127,18 +127,37 @@ document.addEventListener("DOMContentLoaded", () => {
   // FILTER
 
   if (document.querySelector(".filter-distributors")) {
+    const categories = {
+      region: "region",
+      area: "area",
+      city: "city",
+      distributor: "distributor",
+    };
+    const filter = {
+      region: "",
+      area: "",
+      city: "",
+      distributor: "",
+    };
+
     document.querySelector(".filter-distributors").addEventListener("click", function (e) {
+      // КЛИК ПО ТАБУ
+
       if (e.target.classList.contains("filter-dropdown-action")) {
+        const listWrapper = e.target.parentElement.querySelector(".filter-dropdown-list-wrapper");
+
         if (e.target.classList.contains("active")) {
           e.target.classList.remove("active");
-          e.target.parentElement.querySelector(".filter-dropdown-list-wrapper").classList.remove("active");
+          listWrapper.classList.remove("active");
         } else {
           getElementAndRemoveClass(this, ".filter-dropdown-action", "active");
           e.target.classList.add("active");
           getElementAndRemoveClass(this, ".filter-dropdown-list-wrapper", "active");
-          e.target.parentElement.querySelector(".filter-dropdown-list-wrapper").classList.add("active");
+          listWrapper.classList.add("active");
         }
       }
+
+      // КЛИК ПО ЭЛЕМЕНТУ СПИСКА
 
       if (e.target.classList.contains("filter-dropdown-list-item")) {
         getElementAndRemoveClass(this, ".filter-dropdown-action", "active");
@@ -146,16 +165,38 @@ document.addEventListener("DOMContentLoaded", () => {
         getElementAndRemoveClass(e.target.parentElement, ".filter-dropdown-list-item", "active");
         e.target.classList.add("active");
         this.querySelector(`.${e.target.dataset.actionClass}`).textContent = e.target.textContent;
+
+        switch (e.target.dataset.category) {
+          case categories.region:
+            filter.region = e.target.dataset.filterClass;
+            break;
+          case categories.area:
+            filter.area = e.target.dataset.filterClass;
+            break;
+          case categories.city:
+            filter.city = e.target.dataset.filterClass;
+            break;
+          case categories.distributor:
+            filter.distributor = e.target.dataset.filterClass;
+            break;
+        }
+        console.log(filter);
       }
     });
 
+    // ПОИСК
+
     document.querySelector(".filter-distributors").addEventListener("input", function (e) {
       if (e.target.classList.contains("filter-search")) {
-        const result = Array.from(this.querySelector(`.${e.target.dataset.search}`).children).filter((child) =>
-          child.textContent.trim().toLowerCase().includes(e.target.value.trim().toLowerCase())
-        );
-        console.log(e.target.value.trim());
-        console.log(result);
+        this.querySelector(`.${e.target.dataset.search}`)
+          .querySelectorAll(".filter-dropdown-list-item")
+          .forEach(function (li) {
+            if (li.textContent.trim().toLowerCase().includes(e.target.value.trim().toLowerCase())) {
+              li.style.display = "block";
+            } else {
+              li.style.display = "none";
+            }
+          });
       }
     });
   }

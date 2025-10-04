@@ -1710,7 +1710,7 @@
 
 /* FILTER */
 
-.filter {
+.filter-dropdown-section {
   display: flex;
   gap: 0.625rem;
 }
