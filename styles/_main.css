@@ -1722,6 +1722,7 @@
 .filter-dropdown-section {
   display: flex;
   gap: 0.625rem;
+  flex-wrap: wrap;
 }
 .filter-dropdown {
   position: relative;
@@ -1730,7 +1731,7 @@
   padding: 0.5em 1em;
   display: flex;
   align-items: center;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.25;
   border: 1px solid var(--secondary);
   border-radius: 2rem;
@@ -1818,4 +1819,25 @@
 }
 .filter-result-item-links {
   margin-top: 0.5em;
+}
+
+/* CART */
+
+.cart__title {
+  font-weight: 700;
+}
+.cart-product__list {
+  margin-top: 3em;
+}
+.cart-product {
+  padding: 2.5em 1.25em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--secondary);
+  border-radius: var(--radius);
+}
+.cart-product img {
+  max-width: 7.5rem;
 }

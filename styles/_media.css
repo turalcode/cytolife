@@ -149,6 +149,9 @@
     width: 100%;
     max-width: initial;
   }
+  .filter-dropdown-action {
+    font-size: 0.875rem;
+  }
 }
 
 /* sm <= Medium (md) */
@@ -323,6 +326,19 @@
   }
   .social__qr {
     margin-top: 2em;
+  }
+  .filter-dropdown-section {
+    position: relative;
+  }
+  .filter-dropdown {
+    position: initial;
+  }
+  .filter-dropdown-list-wrapper {
+    min-width: initial;
+    right: 0;
+  }
+  .filter-result-item {
+    width: calc(50% - 10px);
   }
 }
 
@@ -556,6 +572,12 @@
   }
   .social {
     padding-bottom: 2em;
+  }
+  .filter-dropdown-list-wrapper {
+    top: 6rem;
+  }
+  .filter-result-item {
+    width: 100%;
   }
 }
 
