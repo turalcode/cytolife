@@ -340,6 +340,12 @@
   .filter-result-item {
     width: calc(50% - 10px);
   }
+  .cart-empty .button {
+    margin-top: 2em;
+  }
+  .cart-empty__img {
+    margin-top: 1em;
+  }
 }
 
 /* xs <= Small (sm) */
