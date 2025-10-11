@@ -1942,3 +1942,120 @@
 .cart-sidebar__checkout {
   margin-top: 2em;
 }
+
+/* CHECKOUT */
+
+.checkout__content {
+  padding-right: 4em;
+}
+.checkout__block + .checkout__block {
+  margin-top: 4em;
+}
+.checkout__block-title {
+  margin: 0.8em 0 1em 0;
+  font-size: 1.625rem;
+  font-weight: 700;
+}
+.checkout__block-title span {
+  margin-right: 0.6em;
+}
+.checkout__block-fields + .checkout__block-fields {
+  margin-top: 1.6em;
+}
+.row--checkout {
+  column-gap: 4rem;
+}
+.checkout__form-group label {
+  margin-left: 0.5em;
+  font-size: 0.875rem;
+}
+.checkout__form-group input {
+  padding: 0.2em;
+  width: 100%;
+  border-bottom: 1px solid var(--secondary);
+}
+.checkout__form-group-payment + .checkout__form-group-payment {
+  margin-top: 1.5em;
+}
+.checkout__form-group-payment input {
+  appearance: none;
+  margin: 0 0.2em 0 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  position: relative;
+  top: 0.1rem;
+  border: 2px solid var(--secondary);
+  border-radius: var(--radius);
+}
+.checkout__form-group-payment input::before {
+  content: "";
+  width: 0.6rem;
+  height: 0.6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  transform: translate(-50%, -50%);
+}
+.checkout__form-group-payment input:checked::before {
+  display: block;
+}
+.checkout__form-group-payment label {
+  font-size: 1.25rem;
+}
+.checkout__btn {
+  margin-top: 4em;
+}
+.checkout__btn .button,
+.order__btn .button {
+  border: none;
+}
+
+/* ORDER */
+
+.order__content {
+  max-width: 20rem;
+}
+.order__title {
+  margin-bottom: 1.5em;
+}
+.order__block {
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--accent-light);
+}
+.order__block + .order__block {
+  margin-top: 2em;
+}
+.order__block:last-child {
+  padding-bottom: 0;
+  border-bottom: initial;
+}
+.order__product {
+  display: flex;
+  align-items: center;
+  font-size: 0.75rem;
+}
+.order__product + .order__product {
+  margin-top: 2.5em;
+}
+.order__product-img img {
+  margin-right: 1em;
+  width: 100%;
+  max-width: 4rem;
+}
+.order__product-name {
+  margin-right: 3em;
+}
+.order__price,
+.order__total {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.order__price > div + div {
+  margin-top: 1.5em;
+}
+.order__btn {
+  margin-top: 2em;
+}
